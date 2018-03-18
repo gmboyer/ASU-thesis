@@ -1,0 +1,181 @@
+\documentclass[12pt,letterpaper]{report}
+\usepackage{natbib}
+\usepackage{geometry}
+%\usepackage{fancyheadings} fancyheadings is obsolete: replaced by fancyhdr. JL
+\usepackage{fancyhdr}
+\usepackage{afterpage}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsbsy}
+\usepackage{dcolumn,array}
+\usepackage{tocloft}
+\usepackage{asudis}
+
+%GB added packages below:
+\usepackage{float}
+\usepackage{gensymb}
+\usepackage{bm}% bold math
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs} % for excel2latex formatting
+\usepackage{multirow} % for excel2latex formatting
+\usepackage{threeparttable} % for adding notes to a table
+\usepackage{geometry} % for resizing margins
+\usepackage{pdflscape} % for switching to landscape
+\usepackage{adjustbox} % for resizing a large table
+\usepackage{wasysym} % for the permille symbol \permil
+\usepackage{alphalph} % for alphalph numbering in custom \tr and \rtr commands used for complex table footnotes
+
+
+
+
+
+
+%%% Code required to make evenly-spaced columns in table.
+%%% Allows the use of "er" and "el" columns in tabular env.
+\makeatletter
+\newlength\eqcol@newlen
+\newlength\eqcol@oldlen
+\let\eqcol@bc\hfil
+\let\eqcol@ec\hfil
+\let\eqcol@br\hfil
+\let\eqcol@el\hfil
+\newcolumntype{e}[1]{%
+  >{\setbox0\hbox\bgroup}#1%
+  <{\egroup
+    \ifdim\wd0<\eqcol@newlen\else\global\eqcol@newlen\wd0\fi
+    \ifdim\wd0<\eqcol@oldlen\else\global\eqcol@oldlen\wd0\fi
+    \hbox to \eqcol@oldlen{%
+      \csname eqcol@b#1\endcsname
+      \box0 %
+      \csname eqcol@e#1\endcsname
+    }%
+  }%
+}
+\newcount\eqcol@count
+\def\eqcolRead{%
+  \global\advance\eqcol@count1 %
+  \eqcol@oldlen5em\relax
+  \csname eqcol@def@\romannumeral\eqcol@count\endcsname
+}
+\def\eqcolWrite{%
+  \immediate\write\@auxout{%
+  \gdef\expandafter\noexpand\csname eqcol@def@\romannumeral\eqcol@count\endcsname
+    {\global\eqcol@oldlen\the\eqcol@newlen\relax}%
+  }%
+  \global\eqcol@newlen0pt\relax
+}
+\let\eqcol@old@tabular\tabular
+\def\tabular{\eqcolRead\eqcol@old@tabular}
+\let\eqcol@old@endtabular\endtabular
+\def\endtabular{\eqcol@old@endtabular\eqcolWrite}
+\makeatother
+%%% end of code required to make evenly-spaced columns in table
+
+
+\begin{document}
+
+
+%for counting and referencing table entries
+\newcounter{tabcounter}
+\makeatletter
+\newalphalph{\alphmult}[mult]{\@alph}{26}%
+\makeatother
+\renewcommand{\thetabcounter}{\alphmult{\value{tabcounter}}}
+
+\newenvironment{tab}[1]{%
+\refstepcounter{tabcounter}%
+\label{#1}%
+\noindent\textsuperscript{\thetabcounter}%
+}%
+{}%
+
+\newcommand{\tr}[1]{%
+\begin{tab}{#1}{}\end{tab}%
+}%
+\newcommand{\rtr}[1]{%
+\textsuperscript{\ref{#1}}%
+}%
+
+
+%-----------------------front matter
+\pagenumbering{roman}
+\title{Thermodynamic Modeling of Lipid Adaptation in Thermophilic Microbes}
+\author{Grayson Maxwell Boyer}
+\degreeName{Doctor of Philosophy}
+\paperType{Dissertation}
+\defensemonth{April}
+\gradmonth{May}
+\gradyear{2018}
+\chair{Everett Shock}
+\memberOne{Hilairy Hartnett}
+\memberTwo{Pierre Herckes}
+% \memberThree{Your third member}
+% \memberFour{Your fourth member}
+
+\maketitle
+\doublespace
+\include{abstract}
+\dedicationpage{}
+\include{ack}
+\tableofcontents
+% This puts the word "Page" right justified above everything else.
+\addtocontents{toc}{~\hfill Page\par}
+% Asking LaTeX for a new page here guarantees that the LOF is on a separate page
+% after the TOC ends.
+\newpage
+% Making the LOT and LOF "parts" rather than chapters gets them indented at
+% level -1 according to the chart: top of page 4 of the document at
+% ftp://tug.ctan.org/pub/tex-archive/macros/latex/contrib/tocloft/tocloft.pdf
+\addcontentsline{toc}{part}{LIST OF TABLES}
+\renewcommand{\cftlabel}{Table}
+\listoftables
+% This gets the headers for the LOT right on the first page.  Subsequent pages
+% are handled by the fancyhdr code in the asudis.sty file.
+\addtocontents{lot}{Table~\hfill Page \par}
+\newpage
+\addcontentsline{toc}{part}{LIST OF FIGURES}
+\addtocontents{lof}{Figure~\hfill Page \par}
+\addtocontents{toc}{CHAPTER \par}
+\renewcommand{\cftlabel}{Figure}
+\listoffigures
+% This gets the headers for the LOF right on the first page.  Subsequent pages
+% are handled by the fancyhdr code in the asudis.sty file.
+% \addtocontents{lof}{Figure1~\hfill Page1 \par}
+% \addtocontents{lof}{Figure2~\hfill Page2 \par}
+%-----------------------body
+\doublespace
+\pagenumbering{arabic}
+\include{chapter1}
+% \section{This is the title of the first section}
+% \subsection{The blurb}
+% This is chapter 1, in which I talk about all sorts of great stuff that's happening in and around the world.
+% \subsection{The second blurb}
+% Is this a second paragraph? ASU students are struggling with formatting requirements and have to use a difficult-to-use online tool that discourages progress.
+
+% \section{This is the title of the second section}
+% Bring them inside and I'll take a closer look at them. See you all later then. I hope Corny didn't hear the talk about something. Speaking gibberish. Oh, Robert Troll we found each other just in time. Farewell my dear.
+
+\include{chapter2}
+\include{chapter3}
+\include{chapter4}
+\include{chapter5}
+\include{chapter6}
+%-----------------------back matter
+{\singlespace
+% Making the references a "part" rather than a chapter gets it indented at
+% level -1 according to the chart: top of page 4 of the document at
+% ftp://tug.ctan.org/pub/tex-archive/macros/latex/contrib/tocloft/tocloft.pdf
+\addcontentsline{toc}{part}{REFERENCES}
+\bibliographystyle{asudis}
+\bibliography{dis}}
+\renewcommand{\chaptername}{APPENDIX}
+\addtocontents{toc}{APPENDIX \par}
+\appendix
+\include{appendix1}
+\include{appendix2}
+\include{appendix3}
+\include{vita}
+\end{document}
