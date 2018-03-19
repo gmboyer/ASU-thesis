@@ -1,4 +1,4 @@
-\chapter{Thermodynamic assessment of redox controls on bacteriohopanepolyol headgroups}
+\chapter{Thermodynamic assessment of redox controls on bacteriohopanepolyol headgroups}\label{ch3}
 
 
 \section{Introduction}
@@ -7,57 +7,34 @@ Intro
 BHP headgroups, also known as `side-chains', have been shown to situate in lipid bilayers facing outward (ref).
 
 
+However, rather than using hypothetical site-average lipid structures, this study 
+
 \section{Methods}
-\paragraph*{Analysis of water samples} Water temperature and pH were measured immediately prior to collection of water and biological samples. Water samples were filtered with ...[need water sample prep, spectro, IC, DIC, and ICPMS methods]... Oxidation-reduction potentials for select half-reactions were calculated using EQ3/6 geochemistry software using data from the slop16 aqueous thermodynamic database. Output files and the slop16 database are given in the supplementary material.
+\subsection{Sample collection and analysis} Total lipid extracts (TLEs) from hot spring sediments and biofilms were obtained for this sample set as described in Chapter \ref{ch1}. Methods used to collect and analyze water samples are described there as well. Aliquots of TLE set aside for BHP analysis were prepared for HPLC-MS as described in \cite{talbot2003atmospheric}. Briefly, BHPs were converted into their acetate derivative by heating aliquots of TLE in 1:1 v/v acetic anhydride and pyridine at 50$^{\circ}$ for 1 hour, leaving at room temperature overnight, drying under N$_2$, and then redissolving in methanol. Resulting TLEs were then injected Agilent 1200 Series HPLC equipped with a binary pump linked to an Agilent Q-TOF 6520 MS with a Poroshell 120 EC-C18 column and atmospheric pressure chemical ionization (APCI) source operated in positive ion mode. The column was first eluted isocratically with 100\% solvent A (95:5 MeOH:water) for 2 min, followed by a linear gradient to 20\% solvent B (isopropanol) for 18 minutes, then held isocratically for 10 min. The linear gradient continued to 30\% B over 10 min, held for 5 min, brought up to 80\% B over 1 min, then maintained for 14 min. The column was then eluted with 100\% A for 5 minutes. The flow rate throughout analysis was 0.19 mL min$^{-1}$.
 
-\paragraph*{HPLC-MS} Total lipid extracts (TLEs) from Yellowstone hot spring sediments and biofilms were obtained for this sample set as reported in \cite{boyer2018thermophile}.
+BHPs were identified based on the exact masses of their protonated molecular ions at the MS level, their relative retention times, and by referencing MS/MS fragmentation patterns to published spectra \citep{talbot2005bacteriohopanepolyols, talbot2007rapid, talbot2007structural, talbot2003atmospheric, talbot2003characteristic, talbot2008cyanobacterial}. Tetra-, penta-, and hexafunctional composite BHPs were identified by diagnostic fragments 655.49, 713.50, and 771.50, for BHPs without a 2- or 3-methylation, and 669.51, 727.51, and 785.52, for BHPs with a 2- or 3-methylation, respectively, which correspond to the monoisotopic mass of the acetylated BHPs after loss of a composite group fragment. Relative BHP within-sample abundances were obtained semi-quantitatively by comparing ratios of integrated peak areas of parent ions.
 
-Aliquots of TLE set aside for BHP analysis were prepared for HPLC-MS as described in \cite{talbot2003atmospheric}. Briefly, BHPs were converted into their acetate derivative by heating aliquots of TLE in 1:1 v/v acetic anhydride and pyridine at 50$^{\circ}$ for 1 hour, leaving at room temperature overnight, drying under N$_2$, and then redissolving in methanol. Resulting TLEs were then injected Agilent 1200 Series HPLC equipped with a binary pump linked to an Agilent Q-TOF 6520 MS with a Poroshell 120 EC-C18 column and atmospheric pressure chemical ionization (APCI) source operated in positive ion mode. The column was first eluted isocratically with 100\% solvent A (95:5 MeOH:water) for 2 min, followed by a linear gradient to 20\% solvent B (isopropanol) for 18 minutes, then held isocratically for 10 min. The linear gradient continued to 30\% B over 10 min, held for 5 min, brought up to 80\% B over 1 min, then maintained for 14 min. The column was then eluted with 100\% A for 5 minutes. The flow rate throughout analysis was 0.19 mL min$^{-1}$.
-
-BHPs were identified based on the exact masses of their protonated molecular ions at the MS level, their relative retention times, and by referencing MS/MS fragmentation patterns to published spectra \citep{talbot2005bacteriohopanepolyols, talbot2007rapid, talbot2007structural, talbot2003atmospheric, talbot2003characteristic, talbot2008cyanobacterial}. Relative BHP abundances were obtained semi-quantitatively by comparing ratios of integrated peak areas of parent ions within samples.
-
-
-% internal standard: 5βα‐pregnane-3α,12α‐diol-20-one diacetate purchased from Sigma).
-
-\paragraph*{Estimation of standard state thermodynamic properties of BHP polar headgroups.} 
-
+\subsection{Estimation of standard state thermodynamic properties of BHP polar headgroups.}
 The workflow used to estimate standard state partial molal thermodynamic properties of aqueous BHP headgroups is shown schematically in Figure \ref{fig:BHP_thermoest_paper}. Estimations of tetra-, penta-, and hexafunctional BHP headgroups began with the properties of 1,2,3,4-butanetetrol, 1,2,3,4,5-pentanepentol, and 1,2,3,4,5,6-hexanehexol, respectively (Figure \ref{fig:BHP_thermoest_paper}A), which are given in \ref{tab:sa_regress}. The properties of these non-stereoisomeric sugar alcohols were estimated from linear equations obtained by regressing available $\Delta_{f}G^{\circ}_{aq}$, $\Delta_{f}H^{\circ}_{aq}$, $Cp^{\circ}_{aq}$, $V^{\circ}_{aq}$, and $\Delta_{h}G^{\circ}_{aq}$ of sugar alcohol diastereomers as a function of carbon length, shown in Figure \ref{fig:polyol_prop_regress}. Properties of sugar alcohol diasteromers and their literature sources are given in Table \ref{tab:sug_alc}.
 
-Steps one, two, and three of the workflow shown in Figure \ref{fig:BHP_thermoest_paper} involve the addition and subtraction of second order group contributions to thermodynamic properties given in Table \ref{tab:grpadd} to modify the properties of sugar alcohols (structure A) into those estimated for non-amino BHP headgroups (structure D). In step 1, the properties of structure B are obtained from structure A by subtracting the contribution from C-(H)\textsubscript{2}(O)(C), the properties of a CH\textsubscript{2} group bonded to one carbon and one oxygen, and adding the contribution from C-(H)(O)(C)\textsubscript{2}, the properties of a CH group bonded to two carbons and one oxygen. In step 2, the contribution of C-(H)\textsubscript{2}(C)\textsubscript{2}, a CH\textsubscript{2} group bonded to two carbons, is added to structure B a number of times such that structure C has six carbons. Step 2 is skipped for hexafunctional structure B, as it already has six carbons. In step 3, contributions from C-(H)(C)\textsubscript{3} and C-(H)\textsubscript{3}(C) are then added to structure C (or structure B for the hexafunctional workflow), resulting in estimated properties for six-carbon-long BHP tetrol, pentol, and hexol headgroups (structure D). In step 4, the properties of 1,2-ethanediol (given in Table \ref{tab:sug_alc}) are subtracted from structure D and those of ethanolamine (given in Table \ref{tab:misc_prop}) are added, resulting in the estimated properties of BHP aminotriol, aminotetrol, and aminopentol headgroups (structure E). In step 5, the properties of ionized aminopolyol BHP headgroups (structure F) are obtained by subtracting the properties of ethanolamine and adding those of ethanolamminium, given in \ref{tab:misc_prop}.
-
-
-% Add butantetrol, pentanepentol, and hexanehexol to table.
-% Pull up BHP_thermo.xlsx and get refs for CH2O, CHO, and CH2 aqueous props to finalize discussion of polyol headgroup estimation.
-% Get refs for MEA and protonation rxn used in estimation of aminopolyols.
-% Table could become "Partial molal thermodynamic data for sugar alcohols and other components used in the estimation of BHP polar headgroup properties".
-
-
-% Group additivity theory is used here, starting with sugar alcohol base.
-% Obtain stereochemically-agnostic thermo properties (Gf, Hf, V, Cp, and Gh) of 4, 5, or 6 carbon long sugar alcohols by regression of available data.
-% Subtraction and addition of bits according to 2nd-order group additivity theory to obtain estimates of non-composite, non-amine, 6-carbon BHP headgroup properties.
-% subtract 1,2-diol and add monoethanolamine to obtain amine forms.
-% add properties of the monoethanolamine ionization reaction to estimate ionized amine BHP headgroups.
-% HKF parameters for neutral BHP headgroups were obtained using the estimation scheme for polar neutral solutes reported in PS2001. HKF params for charged BHP headgroups were obtained using [check HKF calc].
+Steps one, two, and three of the workflow shown in Figure \ref{fig:BHP_thermoest_paper} involve the addition and subtraction of second order group contributions to thermodynamic properties given in Table \ref{tab:grpadd} to modify the properties of sugar alcohols (structure A) into those estimated for non-amino BHP headgroups (structure D). In step 1, the properties of structure B are obtained from structure A by subtracting the contribution from C-(H)\textsubscript{2}(O)(C), the properties of a CH\textsubscript{2} group bonded to one carbon and one oxygen, and adding the contribution from C-(H)(O)(C)\textsubscript{2}, the properties of a CH group bonded to two carbons and one oxygen. In step 2, the contribution of C-(H)\textsubscript{2}(C)\textsubscript{2}, a CH\textsubscript{2} group bonded to two carbons, is added to structure B a number of times such that structure C has six carbons. Step 2 is skipped for hexafunctional structure B, as it already has six carbons. In step 3, contributions from C-(H)(C)\textsubscript{3} and C-(H)\textsubscript{3}(C) are then added to structure C (or structure B for the hexafunctional workflow), resulting in estimated properties for six-carbon-long BHP tetrol, pentol, and hexol headgroups (structure D). In step 4, the properties of 1,2-ethanediol (given in Table \ref{tab:sug_alc}) are subtracted from structure D and those of ethanolamine (given in Table \ref{tab:misc_prop}) are added, resulting in the estimated properties of BHP aminotriol, aminotetrol, and aminopentol headgroups (structure E). In step 5, the properties of ionized aminopolyol BHP headgroups (structure F) are obtained by subtracting the properties of ethanolamine and adding those of ethanolamminium given in Table \ref{tab:misc_prop}.
 
 
 \subsection{Estimation of revised Helgeson-Kirkham-Flowers (HKF) equation of state parameters for BHP polar headgroups}
 
-Fitting parameters for the revised HKF equation of state were estimated for BHP polyol and aminopolyol headgroups using $\Delta_{f}G^{\circ}_{aq}$, $\Delta_{f}H^{\circ}_{aq}$, $Cp^{\circ}_{aq}$, $V^{\circ}_{aq}$, and $\Delta_{h}G^{\circ}_{aq}$ and the correlation strategies given in \cite{plyasunov2001correlation} for aqueous nonelectrolytes.
+Fitting parameters for the revised HKF equation of state were estimated for uncharged BHP polyol and aminopolyol headgroups using $\Delta_{f}G^{\circ}_{aq}$, $\Delta_{f}H^{\circ}_{aq}$, $Cp^{\circ}_{aq}$, $V^{\circ}_{aq}$, and $\Delta_{h}G^{\circ}_{aq}$ and the correlation strategies given in \cite{plyasunov2001correlation} for aqueous nonelectrolytes. Charged ammoniumpolyol BHP headgroups HKF parameters were estimated with a hybrid scheme, where the correlation strategy in \cite{sverjensky2014water} was used to estimate $a_{1}$ (for charged and uncharged aqueous species up to 60 kb), and the estimation methods in \cite{shock1990calculation} were used to obtain $\omega$ (from $S^{\circ}_{aq}$), $c_{1}$, $c_{2}$, $a_{2}$, and $a_{4}$. The parameter $a_{3}$ was solved from $\omega$ and the other $a$ parameters using the volume-dependent portion of the HKF equation, Equation A-1 in \cite{tanger1988calculation}.
 
-HKF parameters for ammoniumpolyol BHP headgroups were estimated using a hybrid estimation scheme:
+\subsection{Calculating BHP headgroup metastable equilibrium percent abundance and headgroup-predicted Eh}
 
-shock and helgeson 1990 to get omega (est. from entropy), a2, a4, c1, c2 of charged molecule, get a1 from sverjenski 2014 (works for charged and uncharged), solve for a3.
-
-\subsection{thermo calcs}
-Used the same method for calculating relative percent abundances along Eh gradients as in ch2 and used same basis species (different Eh ranges, which are ...). Compared observed ratios of tetrafunctional and pentafunctional. Calc'd Eh at which thermodynamically stable ratio matched observation and called this headgroup-predicted Eh.
+Methods used for calculating metastable equilibrium percent abundances for aqueous species as a function of Eh are described in Chapter \ref{ch2} for hypothetical site-average alkyl chains rather than for all observed chain structures, though in this study, the latter approach is taken. All nine polyol and aminopolyol BHP headgroup structures were allowed to speciate as a function of Eh. Observed ratios of tetrafunctional and pentafunctional BHPs in samples were compared to thermodynamically-predicted ratios along the calculated Eh gradient. Headgroup-predicted Eh was designated for a sample as the Eh where the relative ratio of tetrafunctional to pentafunctional BHP headgroups predicted by metastable equilibrium calculations matched the ratio observed in extracted BHPs (e.g. an observed ratio of 86:14 tetrafunctional to pentafunctional BHPs was observed in the lipid extract of sample BP2, and using the temperature and basis species concentrations of BP2, this ratio is predicted to be most stable at a an Eh of -0.164 volts; the headgroup-predicted Eh of BP2).
 
 
 
 \section{Results}
-\paragraph*{Average oxidation state of carbon in BHP headgroups, Z\textsubscript{C}}
+\subsection{Average oxidation state of carbon in BHP headgroups, Z\textsubscript{C}}
 % ZC of BHP headgroups does not correlate with temperature, dissolved O2, or Eh.
 
-\paragraph*{Eh estimated from ratios of summed tetra- and pentafunctional BHP headgroups}
+\subsection{Eh estimated from ratios of summed tetra- and pentafunctional BHP headgroups}
 Estimated properties and thermodynamic parameters are shown in Table \ref{tab:BHP_thermo_props}.
 
 Activity diagrams showing degree of formation as a consequence of relative stabilities of summed tetra-and pentafunctional BHP headgroups are given in Figure \ref{fig:degree_formation} for seventeen out of eighteen sample sites where the calculation could be performed.
