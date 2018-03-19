@@ -40,11 +40,16 @@ Steps one, two, and three of the workflow shown in Figure \ref{fig:BHP_thermoest
 % HKF parameters for neutral BHP headgroups were obtained using the estimation scheme for polar neutral solutes reported in PS2001. HKF params for charged BHP headgroups were obtained using [check HKF calc].
 
 
-\paragraph*{Estimation of revised Helgeson-Kirkham-Flowers (HKF) equation of state parameters for BHP polar headgroups.}
+\subsection{Estimation of revised Helgeson-Kirkham-Flowers (HKF) equation of state parameters for BHP polar headgroups}
 
 Fitting parameters for the revised HKF equation of state were estimated for BHP polyol and aminopolyol headgroups using $\Delta_{f}G^{\circ}_{aq}$, $\Delta_{f}H^{\circ}_{aq}$, $Cp^{\circ}_{aq}$, $V^{\circ}_{aq}$, and $\Delta_{h}G^{\circ}_{aq}$ and the correlation strategies given in \cite{plyasunov2001correlation} for aqueous nonelectrolytes.
 
-Those of ammoniumpolyol BHP headgroups were estimated using
+HKF parameters for ammoniumpolyol BHP headgroups were estimated using a hybrid estimation scheme:
+
+shock and helgeson 1990 to get omega (est. from entropy), a2, a4, c1, c2 of charged molecule, get a1 from sverjenski 2014 (works for charged and uncharged), solve for a3.
+
+\subsection{thermo calcs}
+Used the same method for calculating relative percent abundances along Eh gradients as in ch2 and used same basis species (different Eh ranges, which are ...). Compared observed ratios of tetrafunctional and pentafunctional. Calc'd Eh at which thermodynamically stable ratio matched observation and called this headgroup-predicted Eh.
 
 
 

@@ -27,8 +27,24 @@
 \usepackage{adjustbox} % for resizing a large table
 \usepackage{wasysym} % for the permille symbol \permil
 \usepackage{alphalph} % for alphalph numbering in custom \tr and \rtr commands used for complex table footnotes
+\usepackage{datatool} % for creating sorted glossary
 
 
+
+%%% Code to create a sorted list for glossary
+\newcommand{\gloss}[1]{%
+  \DTLnewrow{list}% Create a new entry
+  \DTLnewdbentry{list}{description}{#1}% Add entry as description
+}
+\newenvironment{sortedgloss}{%
+  \DTLifdbexists{list}{\DTLcleardb{list}}{\DTLnewdb{list}}% Create new/discard old list
+}{%
+  \DTLsort{description}{list}% Sort list
+  \begin{itemize}%
+    \DTLforeach*{list}{\theDesc=description}{%
+      \item \theDesc}% Print each item
+  \end{itemize}%
+}
 
 
 
@@ -73,7 +89,6 @@
 \def\endtabular{\eqcol@old@endtabular\eqcolWrite}
 \makeatother
 %%% end of code required to make evenly-spaced columns in table
-
 
 \begin{document}
 
@@ -138,9 +153,11 @@
 \newpage
 \addcontentsline{toc}{part}{LIST OF FIGURES}
 \addtocontents{lof}{Figure~\hfill Page \par}
+
 \addtocontents{toc}{CHAPTER \par}
 \renewcommand{\cftlabel}{Figure}
 \listoffigures
+
 % This gets the headers for the LOF right on the first page.  Subsequent pages
 % are handled by the fancyhdr code in the asudis.sty file.
 % \addtocontents{lof}{Figure1~\hfill Page1 \par}
@@ -160,9 +177,7 @@
 
 \include{chapter2}
 \include{chapter3}
-\include{chapter4}
-\include{chapter5}
-\include{chapter6}
+
 %-----------------------back matter
 {\singlespace
 % Making the references a "part" rather than a chapter gets it indented at
