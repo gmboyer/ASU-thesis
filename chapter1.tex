@@ -1,7 +1,7 @@
 \chapter{Thermophile lipid oxidation state suggests bioenergetic favorability of alkyl chain modification along temperature and redox gradients}\label{ch1}
 
 \section{Abstract}
-Distributions of microbial lipids have been shown to change spatially along thermal and geochemical gradients, coinciding with changes in community composition and the drive to preserve membrane homeostasis and thermostability. This coincides with changes in the average oxidation state of carbon (Z\textsubscript{C}) in lipids and their component parts. In this study, we calculated the abundance-weighted Z\textsubscript{C} of headgroups, backbones, alkyl chains, and full structures of intact polar lipids (IPLs) and extracted from microbial biomass collected along the thermal and redox gradients of four hot springs in Yellowstone National Park (YNP). We found that carbon in full IPLs and their alkyl chains becomes more oxidized downstream of each of the four hot spring sources, coinciding with decreasing water temperature and increasing concentrations of oxidized inorganic solutes such as dissolved oxygen. IPLs and their alkyl chains are most reduced in the hot, reducing samples, with weighted Z\textsubscript{C} between -1.68 and -1.55. This value gradually increases downstream to around -1.48 to -1.33 in microbial communities living between 29-40$^\circ$C. This near-linear increase in abundance-weighted Z\textsubscript{C} downstream can be attributed to adaptations in alkyl chains to regulate membrane fluidity and permeability; namely, a shift from ether-linked to ester-linked alkyl chains, a decrease in the number of aliphatic carbons per chain (nC), an increase in the number of unsaturation per chain (nUnsat), and an increase in the number of internal rings in archaeal tetraether lipids. Each of these modifications increase the Z\textsubscript{C} of alkyl chains, and by extension, full IPLs. Weighted Z\textsubscript{C} of backbones did not show a trend with temperature or redox state, but of headgroups appeared to become more reduced downstream, though having relatively little effect on the Z\textsubscript{C} of full IPLs. A separate Monte Carlo-style analysis was performed to test the sensitivity of observed Z\textsubscript{C} trends, where over the course of 999 iterations, liquid-chromatography mass-spectrometry (LC-MS) integrated peak areas were varied randomly up to $\pm$30\% and response factors to two orders of magnitude. Observed trends in abundance-weighted Z\textsubscript{C} remained robust for full IPLs and alkyl chains, but not for headgroups, which were sensitive to random noise at downstream sites. The downstream increase in the weighted Z\textsubscript{C} of thermophile IPLs and their alkyl chains may suggest a bioenergetic evolutionary advantage to solving the problem of membrane thermostability with reduced alkyl chain modifications in reducing conditions and oxidized modifications in oxidizing conditions.
+Distributions of microbial lipids have been shown to change spatially along thermal and geochemical gradients, coinciding with changes in community composition and the drive to preserve membrane homeostasis and thermostability. This coincides with changes in the average oxidation state of carbon (Z\textsubscript{C}) in lipids and their component parts. In this study, we calculated the abundance-weighted Z\textsubscript{C} of headgroups, backbones, alkyl chains, and full structures of intact polar lipids (IPLs) and extracted from microbial biomass collected along the thermal and redox gradients of four hot springs in Yellowstone National Park (YNP). We found that carbon in full IPLs and their alkyl chains becomes more oxidized downstream of each of the four hot spring sources, coinciding with decreasing water temperature and increasing concentrations of oxidized inorganic solutes such as dissolved oxygen. IPLs are most reduced in the hot, reduced upstream conditions, with weighted Z\textsubscript{C} between -1.68 and -1.56. This value gradually increases downstream to around -1.36 to -1.33 in microbial communities living between 29.0-38.1$^\circ$C. This near-linear increase in abundance-weighted Z\textsubscript{C} downstream can be attributed to adaptations in alkyl chains to regulate membrane fluidity and permeability; namely, a shift from ether-linked to ester-linked alkyl chains, a decrease in the number of aliphatic carbons per chain (nC), an increase in the number of unsaturation per chain (nUnsat), and an increase in the number of internal rings in archaeal tetraether lipids. Each of these modifications increase the Z\textsubscript{C} of alkyl chains, and by extension, full IPLs. Weighted Z\textsubscript{C} of backbones did not show a trend with temperature or redox state, but of headgroups appeared to become more reduced downstream, though having relatively little effect on the Z\textsubscript{C} of full IPLs. A separate Monte Carlo-style analysis was performed to test the sensitivity of observed Z\textsubscript{C} trends, where over the course of 999 iterations, liquid-chromatography mass-spectrometry (LC-MS) integrated peak areas were varied randomly up to $\pm$30\% and response factors to two orders of magnitude. Observed trends in abundance-weighted Z\textsubscript{C} remained robust for full IPLs and alkyl chains, but not for headgroups, which were sensitive to random noise at downstream sites. The downstream increase in the weighted Z\textsubscript{C} of thermophile IPLs and their alkyl chains may suggest a bioenergetic evolutionary advantage to solving the problem of membrane thermostability with reduced alkyl chain modifications in reducing conditions and oxidized modifications in oxidizing conditions.
 
 \section{Introduction}
 Organisms have adapted compositions of membrane lipid structures, as well as ways to modify these compositions and structures, to regulate fluidity, structural integrity, permeability, and overall functionality in response to temperature, pressure, and chemical composition of the surroundings. Nature has employed a number of strategies to allow membrane function across the entire range of conditions in which life exists, such as altering lipid headgroup and backbone structures, incorporating sterols, hopanoids, alkenones, or membrane-spanning monolayer-forming lipids such as glycerol dialkyl glycerol tetraethers (GDGTs), or other molecules, modifying chain length and methyl branching, number of unsaturations and hydroxylations, and using various combinations of chain-backbone ester, ether, and amide linkage types \citep{marlowe1984long, belin2018hopanoid, van2008membrane}.
@@ -276,9 +276,9 @@ Abundance-weighted properties of IPL headgroups, backbones, and chains were calc
 
 Abundance-weighted properties calculated in this way include nC, nUnsat, and the number of hydroxylations (nOH) per alkyl chain, the fraction of alkyl chains that form monolayers ($x_{monolayer}$), and the fraction backbone-alkyl chain linkage types with an ether ($x_{ether}$), ester ($x_{ester}$), amide ($x_{amide}$), or C-C ($x_{C-C}$) bond.
 
-The abundance-weighted number of internal rings per GDGT (not per alkyl chain) in a sample was also calculated using Equation \ref{eq:avechain} by setting $x_{i}$ to the mole fraction of the $i^{th}$ GDGT (rather than the $i^{th}$ IPL), and setting $n_{component,i} \cdot x_{i}$ equal to 1, thereby producing a per-GDGT property rather than a per-chain property.
+The abundance-weighted number of internal rings per GDGT (not per alkyl chain) in a sample was also calculated using Equation \ref{eq:avecomponent} by setting $x_{i}$ to the mole fraction of the $i^{th}$ GDGT (rather than the $i^{th}$ IPL), and setting $n_{component,i} \cdot x_{i}$ equal to 1, thereby producing a per-GDGT property rather than a per-chain property.
 
-Average chemical formulae of IPL components were determined using known charge and abundances of carbon, hydrogen, nitrogen, oxygen, phosphorus, and sulfur atoms as $\Xi_{ipl,i}$ in Equation \ref{avecomponent} and then solving for the weighted average of each. The average chemical formulae of full IPL structures was calculated using the charge and elemental abundance summed across the $i^{th}$ IPL while setting $n_{component,i} \cdot x_{i}$ equal to 1. Even when the structure of an IPL component is unclear (\textit{e.g}. the unidentified `223' headgroup observed in this study), its elemental composition is typically obtainable with accurate-mass spectrometry. This permits the inclusion of ambiguous structures when calculating average elemental abundances.
+Average chemical formulae of IPL components were determined using known charge and elemental abundance of carbon, hydrogen, nitrogen, oxygen, phosphorus, and sulfur atoms in the chemical structures as $\Xi_{ipl,i}$ in Equation \ref{avecomponent} and then solving for the weighted average of each. The average chemical formulae of full IPL structures was calculated using the charge and elemental abundance summed across the $i^{th}$ IPL while setting $n_{component,i} \cdot x_{i}$ equal to 1. Even when the structure of an IPL component is unclear (\textit{e.g}. the unidentified `223' headgroup observed in this study), its elemental composition is typically obtainable with accurate-mass spectrometry. This permits the inclusion of ambiguous structures when calculating average elemental abundances.
 
 \subsection{Calculation of IPL Z\textsubscript{C}}
 Abundance-weighted $Z_{C}$ for IPLs and their component parts were calculated using the abundance-weighted chemical formulae in the equation
@@ -291,7 +291,7 @@ Abundance-weighted $Z_{C}$ for IPLs and their component parts were calculated us
 
 Equation \ref{eq:ZC} was also used to determine the Z\textsubscript{C} values of individual lipid structures, such as those reported in Figure \ref{fig:chain_comparison}.
 
-\subsection{Simulation of analytical uncertainty} A sensitivity analysis was performed in which manually-integrated IPL HPLC-MS peak areas were allowed to vary randomly by up to 30\% their original value, and analytical response factors applied to any headgroup-backbone combination listed in Table \ref{tab:IPL} were allowed to vary by two orders of magnitude higher or lower over the course of 999 iterations, after which abundance-weighted Z\textsubscript{C} for lipids and their components were then re-calculated.
+\subsection{Simulation of analytical uncertainty} A Monte Carlo-style boostrap sensitivity analysis was performed in which manually-integrated IPL HPLC-MS peak areas were allowed to vary randomly by up to 30\% their original value, and analytical response factors applied to any headgroup-backbone combination listed in Table \ref{tab:IPL} were allowed to vary by up two orders of magnitude higher or lower over the course of 999 iterations. Abundance-weighted Z\textsubscript{C} for lipids and their components were re-calculated from abundance-weighted average chemical formulae after each iteration.
 
 
 \section{Results}
@@ -425,8 +425,6 @@ Spring & OS2   & 3.3   & 0.03  & 0.02  & 18.76 & 0.02  & 12 \\
 \subsection{Water chemistry and redox potential} Temperature, pH, and conductivity measurements corresponding to samples along the four studied hot spring outflow channels are shown in Table \ref{tab:geophysical}. As water flows from the source and cools, microbial communities in alkaline hot springs change spatially along the channel, with chemotrophs dominating the higher-temperature end and green/orange pigmented phototrophic cyanobacteria at the lower-temperature end. All four studied outflow channels show downstream changes in water chemistry as shown in Table \ref{tab:redox}, which in all cases are marked by an overall decrease in concentration of reduced inorganic dissolved species and an increase in concentration of oxidized inorganic solutes. It can be seen from Figure \ref{fig:redox} that concentrations of relatively reduced sulfide is more concentrated at the source and gradually give way to its oxidized counterpart sulfate. A similar trend is observed for inorganic nitrogen, with concentrations of ammonium higher closer to the source and nitrite and nitrate concentrations higher downstream (Table \ref{tab:redox}). The concentration of dissolved oxygen also exhibits an overall increase downstream, which can likely be attributed to flowing water mixing with the atmosphere, as well as input from oxygenic photosynthesis after the onset of cyanobacteria. Taken together, these geochemical data suggest that the redox potential of the water is generally more reduced at the hot spring source and gradually becomes more oxidized downstream.
 
 
-\subsection{Z\textsubscript{C} of IPLs and their component parts}
-
 \afterpage{
 % \newgeometry{margin=1.5cm} % modify this if you need even more space
 \begin{landscape}
@@ -506,17 +504,33 @@ Spring & OS2   & -1.48 & 0.12  & -0.34 & -1.89 & C\textsubscript{45.2}H\textsubs
     \begin{subfigure}[b]{0.18\linewidth}
         	\includegraphics[width=1\linewidth]{figs_ch1/BasicLipidSchematic.pdf}
     \end{subfigure}
-\caption[Abundance-weighted Z\textsubscript{C} of IPLs and their component parts]{Abundance-weighted Z\textsubscript{C} of headgroups (green), backbones (blue), alkyl chains (orange) and full (black) thermophile IPLs sampled along the outflow channels of four Yellowstone hot springs with respect to temperature (left) and log molality of dissolved O\textsubscript{2} (right). The observed value at each sample site are shown by points, while bars give the standard deviation of weighted Z\textsubscript{C} calculated over 999 bootstrap iterations, wherein underlying integrated HPLC-MS peak areas of individual IPLs were varied randomly by up to 30\% and analytical response factors assigned to each headgroup-backbone combination varied between 0.01$\times$ to 100$\times$ their original value. Lines of best fit indicate linear regression of all 999 bootstrap weighted Z\textsubscript{C}. Shaded areas represent 95\% prediction intervals for future bootstrap Z\textsubscript{C} results.}
+\caption[Abundance-weighted Z\textsubscript{C} of IPLs and their component parts]{Abundance-weighted Z\textsubscript{C} of headgroups (green), backbones (blue), alkyl chains (orange) and full (black) thermophile IPLs sampled along the outflow channels of four Yellowstone hot springs with respect to temperature (left) and log molality of dissolved O\textsubscript{2} (right). Observed values of weighted Z\textsubscript{C} of extracted lipids and their components are indicated by points. Bars and best-fit lines show the standard deviation and linear regression of 999 weighted Z\textsubscript{C} resulting from the bootstrap sensitivity analysis. Shaded areas represent 95\% intervals for the prediction of future bootstrap Z\textsubscript{C} values.}
 \label{fig:weighted_ZC}
 \end{figure}
 \doublespace
 \clearpage
 }
 
-The abundance-weighted Z\textsubscript{C} of IPLs, as well as those of their headgroups, backbones, and alkyl chains, are reported in Table \ref{tab:IPL_ZC} along with observed abundance-weighted chemical formulae. In all four sampled hot spring outflow channels, decreasing temperature and increasingly oxidizing conditions downstream coincides with an increase in the weighted Z\textsubscript{C} of IPLs extracted from thermophilic microbial communities as shown in Figure \ref{fig:weighted_ZC}.
+\subsection{Z\textsubscript{C} of IPLs and their component parts}
+
+The abundance-weighted chemical formulae and Z\textsubscript{C} calculated for thermophilic microbial IPLs and their headgroups, backbones, and alkyl chains are reported in Table \ref{tab:IPL_ZC} for samples collected from Bison Pool, Mound Spring, Empress Pool, and Octopus Spring. As shown in Figure \ref{fig:weighted_ZC}, decreasing temperature and increasingly oxidized conditions coincide with near-linear changes in the weighted Z\textsubscript{C} of IPLs and their components. Carbon was most reduced in IPLs sampled closest to the spring sources (Z\textsubscript{C} between -1.68 and -1.56) where temperatures were highest (82.2 to 91.0$^\circ$C) and concentrations of oxidized inorganic species (nitrate, sulfate, and oxygen) were lowest. In progressively downstream samples, carbon in IPLs became more oxidized, with weighted Z\textsubscript{C} between -1.36 and -1.33 for samples in the 29.0 to 38.1$^\circ$C temperature range where measured concentrations of sulfate, nitrate, and oxygen tended to be greatest. This trend persists even after simulating potential sources of analytical error, as shown in Figure \ref{fig:weighted_ZC} by the black bars above and below the `canon' observations of abundance-weighted Z\textsubscript{C}, which indicate the standard deviation of weighted Z\textsubscript{C} resulting from 999 iterations of the bootstrap sensitivity analysis. The standard deviations of IPL weighted Z\textsubscript{C} show little overlap between upstream and downstream samples after random variation of up to 30\% for integrated HPLC-MS peak areas and up to two orders of magnitude for response factors.
+
+Alkyl chains tend to have weighted Z\textsubscript{C} approximately 0.3-0.4 more negative than those of the full structure regardless of sample. Compared to headgroups and backbones, the weighted Z\textsubscript{C} of alkyl chains were closest to that of the full structure, implicating this component as the primary contributor to full IPL Z\textsubscript{C} and observed trends with temperature and redox. This agrees with the observation that most carbon in IPLs belongs to the alkyl chains. Since alkyl chains have a high H/C ratio to facilitate their hydrophobicity, the weighted ZC of full IPLs and their chains are significantly more negative than those of backbones and headgroups, which have a higher ratio of electronegative atoms (e.g. oxygen, nitrogen) to carbon as a consequence of their relative hydrophilicity. As shown by in Figure \ref{fig:weighted_ZC}, trends in alkyl chain Z\textsubscript{C} appear to be more resilient to simulated sources of analytical uncertainty than the full structure based on sample standard deviations and the narrow 95\% prediction interval generated by the boostrap sensitivity analysis. Unlike full IPL structures, the width of the prediction interval does not overlap between the highest temperature and lowest temperature points, which the authors interpret as further evidence observed trends in alkyl chains are not artifacts of the analytical method used to quantify lipid abundance.
+
+The weighted Z\textsubscript{C} of IPL backbones did not change significantly with temperature or redox, as most observed backbones were comprised of glycerol regardless of sample. According to the IPL component division scheme used in this study, an IPL glycerol backbone has a chemical formula of C\textsubscript{3}H\textsubscript{5}O\textsubscript{2}, corresponding to a Z\textsubscript{C} of $-0.\overline{3}$. This is close to the abundance-weighted value in every sample, with little variation.
+
+Carbon in headgroups was significantly more oxidized than any other component, with weighted Z\textsubscript{C} ranging between -0.01 to 0.32 across samples. Glycolipid headgroups 1G (Z\textsubscript{C} = $0.1\overline{6}$) and 2G (Z\textsubscript{C} = $0.08\overline{3}$) were among the most abundant headgroups observed in all four springs regardless of temperature or redox, with SQ (Z\textsubscript{C} = $0.1\overline{6}$) more abundant in samples where photosynthetic cyanobacteria are visually apparent. Phosphate-bearing phospholipids and glycophospholipids, especially lipids with PI headgroups, were more abundant downstream than upstream, though the incorporation of phosphate into the glycolipid headgroups had little to no affect on abundance-weighted headgroup Z\textsubscript{C}, as there is no difference in Z\textsubscript{C} between analogous nonphosphorylated and phosphorylated headgroups (\textit{e.g.} no difference in Z\textsubscript{C} between 1G-P and 1G, or between 2G-P and 2G, \textit{etc.}). The greatest abundance of lipids with an APT phospholipid headgroup (Z\textsubscript{C} = -0.2) was observed in `pink streamer' thermophile communities sampled from the upstream chemosynthetic zones of Bison Pool and Octopus Spring, which agrees with previous reports of this lipid is common in Thermus/Thermocrinis streamers (refs). However, after applying response factors, the abundance APT was scarce relative to other headgroups, even in streamer samples.
+
+Intriguingly, weighted ZC of IPL headgroups was observed to become progressively negative with decreasing temperature or increasingly oxidized conditions, which is in opposition to trends observed alkyl chains and full IPLs. One reason for this stems from the way abundance-weighted Z\textsubscript{C} is calculated for GDGT headgroups. Because of the monolayer-forming properties of GDGTs, one mole of GDGT will have two moles of headgroup. As an example, consider that 1G-GDGT actually has two headgroups; the first is a glycosyl moiety linked to glycerol one one side of the GDGT, and the second is a hydroxyl (-OH) group terminating the glycerol on the other side of the GDGT. Summing the elemental abundances of 1G (C\textsubscript{6}H\textsubscript{11}O\textsubscript{6}) and -OH results in a total of C\textsubscript{6}H\textsubscript{12}O\textsubscript{7} for both headgroups of 1G-GDGT, or C\textsubscript{3}H\textsubscript{6}O\textsubscript{3.5} per headgroup. Accounting for this extra -OH means that the carbon in the headgroups of 1G-GDGT (Z\textsubscript{C} = $0.\overline{3}$) is considerably more oxidized than carbon in 1G headgroups of non-GDGTs (Z\textsubscript{C} = $0.1\overline{6}$). While 1G served here as an example, this extra oxygen and hydrogen atom must be accounted for in \textit{all} GDGTs, resulting in more oxidized headgroup carbon in GDGT-dominated samples than one might expect relative to non-GDGTs. Another trend that 
+
+
+
+
+
 
 take though fig weightedZC first
 
+What are points doing? How are component zc distributed relative to each other? Behavior of each component and why? Regression of bootstrap sensitivity results show what (direction)? Error bar width shows what and implies what? Prediction bands (separate from confidence bands for mean prediction) are wider for some components and narrower for others: why?
 
 The black bars in Figure \ref{fig:weighted_ZC} show the standard deviation the resulting distribution for each sample.
 
@@ -591,6 +605,30 @@ Spring & OS2   & 17.52 & 3.17$\cdot 10$\textsuperscript{-1} & 5.41$\cdot 10$\tex
 }
 
 
+\afterpage{
+\singlespace
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth]{"figs_ch1/boxplot - alkyl chain and full IPL ZC"}
+\caption[Z\textsubscript{C} of IPLs and alkyl chains as a function of temperature]{Z\textsubscript{C} of IPLs (black/gray series) and their alkyl chains (orange series) as a function of temperature. Circles show weighted Z\textsubscript{C} of the full IPL or alkyl chains at each sample site. Rectangles show the interquartile range (IQR) of observed IPL and akyl chain Z\textsubscript{C}, with 25\% of observations lying above and below the black middle line, representing the median Z\textsubscript{C}, with whiskers encompassing observations up to 1.5 times the IQR beyond this range. Z\textsubscript{C} of IPLs that fall outside the range of the whiskers are not indicated. Linear regressions and 95\% confidence intervals are shown for weighted Z\textsubscript{C} (solid line with lighter confidence band) and for Z\textsubscript{C} of unweighted observations (dotted line with lighter confidence band).}
+\label{fig:ZC}
+\end{figure}
+\doublespace
+\clearpage
+}
+
+
+\afterpage{
+\singlespace
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth]{"figs_ch1/boxplot - headgroup ZC"}
+\caption[Z\textsubscript{C} of IPL headgroups as a function of temperature]{Z\textsubscript{C} of IPL headgroups as a function of temperature. Circles show weighted Z\textsubscript{C} at each sample site. Rectangles show the interquartile range (IQR) of observed IPL headgroup Z\textsubscript{C}, with 25\% of observations lying above and below the black middle line, representing the median Z\textsubscript{C}, with whiskers encompassing observations up to 1.5 times the IQR beyond this range. Z\textsubscript{C} of IPL headgroups that fall outside the range of the whiskers are not indicated. Linear regressions and 95\% confidence intervals are shown for weighted Z\textsubscript{C} (solid line with lighter confidence band) and for Z\textsubscript{C} of unweighted observations (dotted line with lighter confidence band).}
+\label{fig:ZC_head}
+\end{figure}
+\doublespace
+\clearpage
+}
 
 \subsection{Properties of IPLs contributing to Z\textsubscript{C}}
 The overall increase in the oxidation state of IPLs downstream along the studied outflow channels was determined to be caused by a shift in backbone-alkyl chain linkage chemistry from ether to ester bonding, a decrease in the weighted number of aliphatic alkyl chain carbons (nC), an increase in the weighted number of unsaturations per alkyl chain (nUnsat), and an increase in the number of internal pentacyclic rings per GDGT. Other alkyl chain modifications, such as C-C or amide linkage types and hydroxylations, were low in abundance and did not greatly impact weighted Z\textsubscript{C}.
@@ -613,6 +651,8 @@ The transition from hot, reduced upstream to cool, oxidized downstream samples i
 
 In all four studied hot springs, alkyl chain nC decreases downstream. Higher-temperature samples exhibit a greater nC than those at lower temperature (Figure \ref{fig:nC}), which agrees with a plethora of studies demonstrating the capacity of microorganisms to adapt their membrane fluidity and permeability in response to temperature by adjusting the strength of hydrophobic interaction within the nonpolar portion of their membranes (refs).
 
+
+
 An alkyl chain containing an unsaturation (Figure \ref{fig:chain_comparison}h) is more oxidized relative to a saturated chain (Figure \ref{fig:chain_comparison}g) due to having two fewer hydrogen atoms in its elemental composition. The weighted number of unsaturations per alkyl chain was observed to increase downstream in all four studied outflow channels (Figure \ref{fig:nUnsat}). This trend is most prominent in Mound Spring and Empress Pool, where the average degree of unsaturation is close to zero at samples closest to the source and gradually increasing to nearly one unsaturation per alkyl chain in samples furthest downstream.
 
 Each addition of an internal cyclic ring reduces the number of hydrogen atoms in the elemental composition of a GDGT alkyl chain by two, resulting in a more oxidized lipid (compare Z\textsubscript{C} of chains in Figure \ref{fig:chain_comparison}d and e). With the exception of Empress Pool, there tended to be fewer internal rings per GDGT at hotter,  reduced upstream samples and more in cooler, oxidized downstream samples (Figure \ref{fig:nRings}). This agrees with a previous study of Bison Pool lipids, which reported a lower degree of GDGT chain cyclization at higher temperature samples compared to cooler downstream samples \citep{schubotz2013spatial}.
@@ -623,7 +663,41 @@ Expand:
 
 Alkyl chains bearing a secondary hydroxyl group (\textit{e.g.} Figure \ref{fig:chain_comparison}i) were found to comprise a small proportion ($<$ 1\%) of total chains. Even if the backbone hydroxylations of CER (Figure \ref{fig:CER}) and FAHFAm-OH (Figure \ref{fig:FAHFAm-OH}) are instead counted as chain hydroxylations, the total proportion would rise to a maximum of 4\% in any given sample. As such, chain hydroxylations did not substantially affect weighted Z\textsubscript{C} for IPLs in any sample. However, it is possible that alkyl chain hydroxylations are underrepresented. Lipo(oligo/poly)saccharides (LOS/LPS), also known as endotoxins, are lipids commonly produced by gram-negative bacteria and are rich in fatty acid chains with secondary hydroxylations in the 3' carbon position. ["LPS can  cover up to 75\%" of the outer membrane in gram negatives according to 2018 hopanoid review, referencing (Raetz & Whitfield Lipopolysaccharide endotoxins. Annu. Rev. Biochem. 71, 635–700 (2002)) and (Silipo, A., De Castro, C., Lanzetta, R., Parrilli, M. & Molinaro, A. in Prokaryotic Cell Wall Compounds: Structure and Biochemistry (eds König, H., Claus, H. & Varma, A.) 133–153 (Springer, Berlin and Heidelberg, Germany, 2010)).] Thermophilic bacteria have been reported to produce LOS (Lorenzo et al 2014 "Thermophiles as potential source of novel endotoxin antagonists ..."). These IPLs are typically very large, and as such, would escape quantification due to the m/z 2000 limit of the HPLC-MS method employed in this study.
 
+\afterpage{
+\singlespace
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth]{"figs_ch1/boxplot - alkyl chain nC"}
+\caption[Number of aliphatic carbons (nC) per IPL alkyl chain]{Number of aliphatic carbons (nC) per IPL alkyl chain. Dark points represent the weighted value, nC, while the box and whisker plots indicate distributions of individual IPL observations at each sample site, with the black horizontal bar representing the median.}
+\label{fig:nC}
+\end{figure}
+\doublespace
+\clearpage
+}
 
+\afterpage{
+\singlespace
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth]{"figs_ch1/boxplot - alkyl chain nUnsat"}
+\caption[Number of unsaturations (nUnsat) per IPL alkyl chain]{Number of unsaturations (nUnsat) per IPL alkyl chain. Dark points represent the weighted value, nUnsat, while the box and whisker plots indicate distributions of individual IPL observations at each sample site, with the black horizontal bar representing the median.}
+\label{fig:nUnsat}
+\end{figure}
+\doublespace
+\clearpage
+}
+
+\afterpage{
+\singlespace
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth]{"figs_ch1/boxplot - alkyl chain nRings"}
+\caption[Number of internal rings per GDGT]{Number of internal rings per GDGT. Dark points represent the weighted value, while the box and whisker plots indicate distributions of individual IPL observations at each sample site, with the black horizontal bar representing the median.}
+\label{fig:nRings}
+\end{figure}
+\doublespace
+\clearpage
+}
 
 \section{Discussion}
 
@@ -714,70 +788,3 @@ Several intriguing lines of evidence suggest that the redox potential of microbi
 
 
 \section{Acknowledgements} The authors thank the Summons Lab at MIT for graciously allowing the use of their facilities. Members of the Group Exploring Organic Processes in Geochemistry (GEOPIG) deserve thanks for generating water chemistry data used in this study.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\singlespace
-\begin{figure}[h]
-\centering
-\includegraphics[width=1\linewidth]{"figs_ch1/boxplot - alkyl chain and full IPL ZC"}
-\caption[Z\textsubscript{C} of IPLs and alkyl chains as a function of temperature]{Z\textsubscript{C} of IPLs (black/gray series) and their alkyl chains (orange series) as a function of temperature. Circles show weighted Z\textsubscript{C} of the full IPL or alkyl chains at each sample site. Rectangles show the interquartile range (IQR) of observed IPL and akyl chain Z\textsubscript{C}, with 25\% of observations lying above and below the black middle line, representing the median Z\textsubscript{C}, with whiskers encompassing observations up to 1.5 times the IQR beyond this range. Z\textsubscript{C} of IPLs that fall outside the range of the whiskers are not indicated. Linear regressions and 95\% confidence intervals are shown for weighted Z\textsubscript{C} (solid line with lighter confidence band) and for Z\textsubscript{C} of unweighted observations (dotted line with lighter confidence band).}
-\label{fig:ZC}
-\end{figure}
-\doublespace
-
-
-\singlespace
-\begin{figure}[h]
-\centering
-\includegraphics[width=1\linewidth]{"figs_ch1/boxplot - headgroup ZC"}
-\caption[Z\textsubscript{C} of IPL headgroups as a function of temperature]{Z\textsubscript{C} of IPL headgroups as a function of temperature. Circles show weighted Z\textsubscript{C} at each sample site. Rectangles show the interquartile range (IQR) of observed IPL headgroup Z\textsubscript{C}, with 25\% of observations lying above and below the black middle line, representing the median Z\textsubscript{C}, with whiskers encompassing observations up to 1.5 times the IQR beyond this range. Z\textsubscript{C} of IPL headgroups that fall outside the range of the whiskers are not indicated. Linear regressions and 95\% confidence intervals are shown for weighted Z\textsubscript{C} (solid line with lighter confidence band) and for Z\textsubscript{C} of unweighted observations (dotted line with lighter confidence band).}
-\label{fig:ZC_head}
-\end{figure}
-\doublespace
-
-
-
-
-\singlespace
-\begin{figure}[h]
-\centering
-\includegraphics[width=1\linewidth]{"figs_ch1/boxplot - alkyl chain nC"}
-\caption[Number of aliphatic carbons (nC) per IPL alkyl chain]{Number of aliphatic carbons (nC) per IPL alkyl chain. Dark points represent the weighted value, nC, while the box and whisker plots indicate distributions of individual IPL observations at each sample site, with the black horizontal bar representing the median.}
-\label{fig:nC}
-\end{figure}
-\doublespace
-
-
-\singlespace
-\begin{figure}[h]
-\centering
-\includegraphics[width=1\linewidth]{"figs_ch1/boxplot - alkyl chain nUnsat"}
-\caption[Number of unsaturations (nUnsat) per IPL alkyl chain]{Number of unsaturations (nUnsat) per IPL alkyl chain. Dark points represent the weighted value, nUnsat, while the box and whisker plots indicate distributions of individual IPL observations at each sample site, with the black horizontal bar representing the median.}
-\label{fig:nUnsat}
-\end{figure}
-\doublespace
-
-
-\singlespace
-\begin{figure}[h]
-\centering
-\includegraphics[width=1\linewidth]{"figs_ch1/boxplot - alkyl chain nRings"}
-\caption[Number of internal rings per GDGT]{Number of internal rings per GDGT. Dark points represent the weighted value, while the box and whisker plots indicate distributions of individual IPL observations at each sample site, with the black horizontal bar representing the median.}
-\label{fig:nRings}
-\end{figure}
-\doublespace
