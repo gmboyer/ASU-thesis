@@ -19,7 +19,7 @@ However, rather than calculating thermo properties of hypothetical site-average 
 \section{Methods}
 
 \subsection{Water chemistry and metering}
-Methods used to meter, collect, and analyze water samples are described in Chapter \ref{ch1} and \ref{2}. Briefly, temperature was metered with a YSI 30 conductivity meter and pH with a model 3300i or 3110 WTW pH meter with WTW probe. A Hach model 2400 or 2800 portable spectrophotometer and Hach reagents/protocols were used to measure concentrations of dissolved oxygen and sulfide in unfiltered water samples in the field. Samples for laboratory analysis were filtered down to 0.2 microns with Supor (Pall Corporation) filters and collected in 30 mL HDPE Nalgene bottles for ion chromatography and acid-washed amber glass vials with black butyl rubber septa for analysis of dissolved inorganic carbon (DIC). Concentrations of major cations and anions were obtained on Dionex DX-600 systems, while concentrations of DIC were measured on an OI Wet Oxidation TOC analyzer coupled to a Thermo Delta Plus Advantage mass spectrometer.
+Methods used to meter, collect, and analyze water samples are described in Chapter \ref{ch1} and \ref{ch2}. Briefly, temperature was metered with a YSI 30 conductivity meter and pH with a model 3300i or 3110 WTW pH meter with WTW probe. A Hach model 2400 or 2800 portable spectrophotometer and Hach reagents/protocols were used to measure concentrations of dissolved oxygen and sulfide in unfiltered water samples in the field. Samples for laboratory analysis were filtered down to 0.2 microns with Supor (Pall Corporation) filters and collected in 30 mL HDPE Nalgene bottles for ion chromatography and acid-washed amber glass vials with black butyl rubber septa for analysis of dissolved inorganic carbon (DIC). Concentrations of major cations and anions were obtained on Dionex DX-600 systems, while concentrations of DIC were measured on an OI Wet Oxidation TOC analyzer coupled to a Thermo Delta Plus Advantage mass spectrometer.
 
 \subsection{Analysis of BHPs} Total lipid extracts (TLEs) from hot spring sediments and biofilms were obtained for this sample set as described in Chapter \ref{ch1}. Briefly, samples were collected with sterilized forceps and spatulas into sterile specimen containers and stored on dry ice the field before transferal into a -80$^{\circ}$C freezer. Samples were freeze-dried and homogenized with mortar and pestle prior to extraction with a modified version of the Bligh and Dyer method \citep{white1998signature}.
 
@@ -37,13 +37,55 @@ Steps one, two, and three of the workflow shown in Figure \ref{fig:BHP_thermoest
 
 Fitting parameters for the revised HKF equation of state were estimated for uncharged BHP polyol and aminopolyol headgroups using $\Delta_{f}G^{\circ}_{aq}$, $\Delta_{f}H^{\circ}_{aq}$, $Cp^{\circ}_{aq}$, $V^{\circ}_{aq}$, and $\Delta_{h}G^{\circ}_{aq}$ and the correlation strategies given in \cite{plyasunov2001correlation} for aqueous nonelectrolytes. Charged ammoniumpolyol BHP headgroups HKF parameters were estimated with a hybrid scheme, where the correlation strategy in \cite{sverjensky2014water} was used to estimate $a_{1}$ (for charged and uncharged aqueous species up to 60 kb), and the estimation methods in \cite{shock1990calculation} were used to obtain $\omega$ (from $S^{\circ}_{aq}$), $c_{1}$, $c_{2}$, $a_{2}$, and $a_{4}$. The parameter $a_{3}$ was solved from $\omega$ and the other $a$ parameters using the volume-dependent portion of the HKF equation, Equation A-1 in \cite{tanger1988calculation}.
 
-\subsection{Calculating BHP headgroup metastable equilibrium percent abundance and headgroup-predicted Eh}
+\subsection{Calculating BHP headgroup metastable equilibrium abundance and headgroup-predicted Eh}
 
-Methods used for calculating metastable equilibrium percent abundances for aqueous species as a function of Eh are described in Chapter \ref{ch2} for hypothetical site-average alkyl chains rather than for all observed chain structures, though in this study, the latter approach is taken. All nine polyol and aminopolyol BHP headgroup structures were allowed to speciate as a function of Eh. Observed ratios of tetrafunctional and pentafunctional BHPs in samples were compared to thermodynamically-predicted ratios along the calculated Eh gradient. Headgroup-predicted Eh was designated for a sample as the Eh where the relative ratio of tetrafunctional to pentafunctional BHP headgroups predicted by metastable equilibrium calculations matched the ratio observed in extracted BHPs (e.g. an observed ratio of 86:14 tetrafunctional to pentafunctional BHPs was observed in the lipid extract of sample BP2, and using the temperature and basis species concentrations of BP2, this ratio is predicted to be most stable at a an Eh of -0.164 volts; the headgroup-predicted Eh of BP2).
+Methods used for calculating metastable equilibrium abundances for aqueous species as a function of Eh are described in Chapter \ref{ch2} for hypothetical site-average alkyl chains rather than for all observed chain structures, though in this study, the latter approach is taken. All nine polyol and aminopolyol BHP headgroup structures were allowed to speciate as a function of Eh. Observed ratios of tetrafunctional and pentafunctional BHPs in samples were compared to thermodynamically-predicted ratios along the calculated Eh gradient. Headgroup-predicted Eh was designated for a sample as the Eh where the relative ratio of tetrafunctional to pentafunctional BHP headgroups predicted by metastable equilibrium calculations matched the ratio observed in extracted BHPs (e.g. an observed ratio of 86:14 tetrafunctional to pentafunctional BHPs was observed in the lipid extract of sample BP2, and using the temperature and basis species concentrations of BP2, this ratio is predicted to be most stable at a an Eh of -0.164 volts; the headgroup-predicted Eh of BP2).
 
+\subsection{Calculating predicted fraction of aminopolyol BHP headgroups}
+
+A separate calculation was performed to predict the abundance of aminopolyol BHP headgroups (aminotriol, aminotetrol, and aminopentol) relative to headgroups without amine functional groups (tetrol, pentol, hexol) in each sample. Calculations to predict relative abundance of BHP headgroups at the temperature and basis species concentrations were carried out as previously described. However, in reactions to form BHP headgroups from basis species, the concentration of electrons was set by headgroup-predicted Eh value for each sample rather than allowing it to be an independent variable. In this way, ratios of aminopolyols to polyols were predicted by thermodynamic calculations at Eh values that were themselves predicted from observed ratios of tetrafunctional and pentafunctional BHP headgroups.
 
 
 \section{Results}
+
+% Relative abundances of BHP headgroup functionality (refer to bar plot: dominated by tetrol and pentol in most sites, some aminotriol)
+
+% Average oxidation state of carbon in BHP headgroups. What's going on there? (Top panels of four panel figure: R2 of 0.2 with temp, 0.06 with Eh). % ZC of BHP headgroups does not correlate strongly with temperature, dissolved O2 (not shown), or Eh.
+
+% Thermodynamic calculations:
+% (briefly) Regression results for sugar alcohols. Good correlation for most properties. Gibbs free energy of hydration's correlation not as good as others.
+
+% What is happening in thermodynamic estimations of pentafunctional and tetrafunctional BHP headgroup abundance with Eh? Walk though each Bison figure and describe what is happening at each point. Emphasize that these are the SUM of all tetra and pentafunctional fractional abundances (e.g. predicted fractions of tetrol and aminotriol are summed into tetrafunctional).
+
+
+
+% If time, do something with hexafunctional BHPs. E.g. "predicted fraction of hexafunctional" based on observed ratio of pent and tet. Including hexafunctional BHPs hardly (if at all) changes BHP-predicted Eh from pent and tet.
+
+As shown in in the left panel of Figure \ref{fig:aminopolyol_predict}, the fraction of aminoBHPs in observed in lipid extracts is approximately 1-2 orders of magnitude greater than what is predicted by thermodynamic predictions of metastable equilibrium. This could be due to the sources of error in the way the thermodynamic properties of BHP headgroups were estimated, an unrepresentative choice of basis species, uncertainties in the underlying experimental data, \textit{etc}. It is possible that aminopolyol headgroup distributions in nature are responding to variables that are not captured in this thermodynamic model or its underlying energetic assumptions. If one assumes the reverse is true, the discrepancy between predicted and observed fractions could be explained potential differences in ionization efficiency between BHPs with aminopolyol and polyol headgroups during LC-MS analysis. Due to a lack of commercially-available standards, response factor correction could not be performed during the quantification of BHP structures. For the fraction of predicted aminopolyol headgroups to approach observation, BHP LC-MS integrated peak areas would need a response factor correction of about 0.04x, or 25x for non-aminopolyols (Figure \ref{fig:aminopolyol_predict}, right panel). \cite{cooke2008bacterial} and \cite{van2012bacteriohopanepolyol} reported that among a suite of five BHP authentic standards, peak areas of BHPs with nitrogen were approximately 12/8 as intense as those without, meaning a response correction of about 8/12x, or 0.7x, would need to be applied to nitrogen-bearing BHP peak areas to help ensure consistency with BHPs without nitrogen.
+
+% Fraction of aminoBHPs are not predicted very well. Could also very well be due to the way aminoBHP properties are estimated, or even that aminoBHP abundance is not predictable by the thermodynamic assumptions of this study. Could also be due to a lack of commercially-available authentic BHP standards for aminopolyol vs. polyol quantification correction. Would require 0.04x RF for aminopolyols (or assuming 25x RF for non-aminopolyols) to get them on the predicted line. Not incredibly out of the question, as BHPs with nitrogen have been reported to have different ionization efficiency relative to those without (Talbot or Welander?), though these response factors were obtained on a different set of instrumentation than this study, and that is known to be an issue (affected by flow pressure, method, instrument, etc. etc.). Furthermore, a study of IPLs found that nitrogen-bearing IPLs were typically more intense than those without (may be same for this study, leading to overestimation of aminoBHPs). However, while the LC-MS/MS model was the same, the method and ionization source were different for IPLs than for BHPs. Requires further study. 
+
+
+\afterpage{
+\singlespace
+\begin{figure}[h]
+\centering
+    \begin{subfigure}[b]{0.45\linewidth}
+        \includegraphics[width=1\linewidth]{figs_ch3/"scatterplot - predicted aminoBHPs vs observed"}
+        \label{fig:amino_pred_obs}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.45\linewidth}
+        \includegraphics[width=\linewidth]{figs_ch3/"scatterplot - predicted aminoBHPs vs observed 04 RF"}
+        \label{fig:amino_pred_obs_RF}
+    \end{subfigure}
+\caption[Predicted and observed fraction of aminopolyol BHP headgroups]{Predicted and observed fraction of aminopolyol BHP headgroups without response factor correction (left) and with a hypothetical response factor of 0.04x for aminopolyols relative to nonaminopolyols (right). Samples BP1 and OS2 are not plotted on this logarithmic scale because their observed fraction of aminopolyols was zero. ES2 is not plotted because a water sample was not collected, therefore a predicted abundance based on concentrations of basis species could not be performed for this sample.}
+\label{fig:aminopolyol_predict}
+\end{figure}
+\doublespace
+\clearpage
+}
+
+
 \subsection{Average oxidation state of carbon in BHP headgroups, Z\textsubscript{C}}
 % ZC of BHP headgroups does not correlate with temperature, dissolved O2, or Eh.
 
