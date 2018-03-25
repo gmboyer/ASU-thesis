@@ -15,25 +15,32 @@ ZC of IPL headgroups did not show carbon becoming more oxidized downstream. Is t
 However, rather than calculating thermo properties of hypothetical site-average lipid structures, this study aims at estimating the thermodynamic contribution of aqueous BHP polar headgroup structures as reported in the literature, and then using those to calculate relative abundance along an Eh gradient. The Eh where predicted abundance ratios match abundance ratios observed in samples is the `BHP headgroup-predicted Eh' for the sample. Compare to `site-averaged alkyl chain-predicted Eh' from ch2.
 
 % text explaining thermo estimation rationale
-The rationale behind the thermodynamic estimation scheme for BHP headgroup-predicted Eh can perhaps be better explained with a more familiar example; carbonate speciation with pH. As shown in Figure \subref{needfig_a}, carbonate species chemically speciate at room temperature as a function of pH according to thermodynamic equilibrium. Carbon dioxide (CO\textsubscript{2}) is the dominant species below about pH 6.2, bicarbonate (HCO\textsubscript{3}\textsuperscript{-}) between 6.2 and 10.3, and carbonate (CO\textsubscript{3}\textsuperscript{2-}) above 10.3. Assuming that one did not know the pH of the system but could measure the concentration of carbonate species, the fractional abundance of carbonate could be used to solve for pH. For instance, a measured ratio of 50:50 CO\textsubscript{2} to HCO\textsubscript{3}\textsuperscript{-} would indicate a pH of about 6.2 at room temperature, or a pH of about ??? at 90$^{\circ}$C (Figure \subref{needfig_b}). Fractional abundance at 90$^{\circ}$C was calculated from equilibrium constants predicted by the revised Helgeson-Kirkham-Flowers (HKF) equation of state \citep{shock1992calculation} and thermodynamic data and parameters reported in \cite{plyasunov2001correlation, shock1988calculation} for aqueous carbonate species.
+The rationale behind the thermodynamic estimation scheme for BHP headgroup-predicted Eh can perhaps be better explained with a more familiar example; carbonate speciation with pH. As shown in Figure \ref{fig:carbonate_speciation}A, aqueous carbonate species chemically speciate at room temperature as a function of pH according to thermodynamic equilibrium. Carbon dioxide (CO\textsubscript{2}) is the dominant species below about pH 6.2, bicarbonate (HCO\textsubscript{3}\textsuperscript{-}) between 6.2 and 10.3, and carbonate (CO\textsubscript{3}\textsuperscript{2-}) above 10.3. Assuming that one did not know the pH of the system but could measure the concentration of carbonate species, the fractional abundance of carbonate could be used to solve for pH. For instance, a measured ratio of 75:25 CO\textsubscript{3}\textsuperscript{2-} to HCO\textsubscript{3}\textsuperscript{-} would indicate a pH of about 10.8 at room temperature, or a pH of about 10.6 at 90$^{\circ}$C (Figure \ref{fig:carbonate_speciation}B). Fractional abundance at 90$^{\circ}$C was calculated from equilibrium constants predicted by the revised Helgeson-Kirkham-Flowers (HKF) equation of state \citep{shock1992calculation} and thermodynamic data and parameters reported in \cite{shock1988calculation} and \cite{plyasunov2001correlation} for aqueous carbonate species.
+
+\afterpage{
+\singlespace
+\begin{figure}[h]
+\centering
+    \begin{subfigure}[b]{1\linewidth}
+        \includegraphics[width=1\linewidth]{figs_ch3/CarbonateExample25C}
+        \label{fig:carbonate25}
+    \end{subfigure}
+    \begin{subfigure}[b]{1\linewidth}
+        \includegraphics[width=1\linewidth]{figs_ch3/CarbonateExample90C}
+        \label{fig:carbonate90}
+    \end{subfigure}
+\caption[Predicted fractional abundance of aqueous carbonate species as a function of pH]{Predicted fractional abundance of aqueous carbonate species as a function of pH at 25$^{\circ}$C (A) and 90$^{\circ}$C (B). Vertical arrows show the pH predicted by a ratio of 75:25 CO\textsubscript{3}\textsuperscript{-2} to HCO\textsubscript{3}\textsuperscript{-}.}
+\label{fig:carbonate_speciation}
+\end{figure}
+\clearpage
+\doublespace
+}
 
 Reaction kinetics are rapid in the carbonate system, so a shift in pH results in a near-immediate re-equilibration of carbonate species into the fractional abundance at the new pH. In a hypothetical system where microbial membrane lipids are allowed to interchange rapidly in response to the chemical and thermal context of the surroundings, similar observations might be expected with respect to the fractional abundance of BHP headgroups; an increase in ammonia concentration might favor an increase in the fractional abundance of nitrogen-bearing aminopolyols. Likewise, a shift from relatively reduced to oxidized redox potential might favor the fractional abundance of BHP headgroups with a greater number of oxidized functional groups. As with the carbonate system, BHP headgroup fractionation would then represent the most thermodynamically stable equilibrium abundances based on the temperature and chemical conditions of the surroundings. By measuring the fractional abundance of BHP headgroups, it would then be possible to solve for a single chemical unknown assuming all other relevant chemical variables are known, much like predicting pH from the fraction of aqueous carbonate species. Furthermore, if thermodynamic properties were available for aqueous BHP headgroups, the HKF equation could be used to solve for a chemical unknown at elevated temperatures, such as those found in hot springs.
 
-In this study, we quantified structures of BHPs in thermophilic microbial communities sampled along the thermal and redox gradients of four YNP hot springs, Bison Pool (BP), Mound Spring (MS), Empress Pool (EP), and Octopus Spring (OS). We then estimated the aqueous thermodynamic properties of six BHP headgroups, including tetrol, pentol, hexol, aminotriol, aminotetrol, and aminopentol, as well as the properties of the ionized amminium forms of the aminopolyols, including amminiumtriol, amminiumtetrol, and amminiumpentol. Estimations of BHP headgroup thermodynamic properties were performed independently of observations in hot spring samples and were based entirely on thermodynamic measurements of organic molecules reported in the literature. Estimated BHP headgroup properties were then used in conjunction with measurements of hot spring temperature and chemical composition to predict equilibrium speciation of aqueous BHP headgroups along an Eh gradient, following the same principles one would use to predict aqueous carbonate speciation along a pH gradient. Relative abundance of BHP headgroups were then compared to these independent thermodynamic predictions of aqueous BHP headgroup speciation. Much like using measured abundances of carbonate species to predict pH, measured abundances of BHP headgroups were used to predict Eh in each sample. BHP headgroup-predicted Eh values (Eh\textsubscript{BHP,head}) were compared to Eh values previously reported for this sample set (Chapter \ref{ch2}) and were found to have the highest linear correlation with those calculated from the O\textsubscript{2}/H\textsubscript{2}O redox couple.
+In this study, we quantified structures of BHPs in thermophilic microbial communities sampled along the thermal and redox gradients of four YNP hot springs, Bison Pool (BP), Mound Spring (MS), Empress Pool (EP), and Octopus Spring (OS). To simplify subsequent thermodynamic calculations, we separated quantities of BHP headgroups into groups by degree of functionality (tetra-, penta-, and hexafunctional) and by aminopolyol and polyol. BHP composite groups were not considered. We then estimated the aqueous thermodynamic properties of the six resulting BHP headgroups; tetrol, pentol, hexol, aminotriol, aminotetrol, and aminopentol, as and the properties of the ionized forms of the aminopolyols, including amminiumtriol, amminiumtetrol, and amminiumpentol. Estimations of BHP headgroup aqueous thermodynamic properties were performed independently of observations of BHPs in hot spring samples and were based purely on thermodynamic measurements of organic molecules reported in the literature. Estimated BHP headgroup properties were then used in conjunction with measurements of hot spring temperature and chemical composition to predict equilibrium speciation of aqueous BHP headgroups along an Eh gradient, following the same principles one would use to predict aqueous carbonate speciation along a pH gradient. Relative abundance of BHP headgroups were then compared to these independent thermodynamic predictions of aqueous BHP headgroup speciation. Much like using measured abundances of carbonate species to predict pH, measured abundances of tetrafunctional and pentafunctional BHP headgroups were used to predict Eh in each sample. These BHP headgroup-predicted Eh values (Eh\textsubscript{BHP, head}) were compared to values of Eh previously reported for this sample set (Chapter \ref{ch2}) and were found to have a strong positive linear correlation, especially those calculated from the O\textsubscript{2}/H\textsubscript{2}O redox couple.
 
-
-
-
-Based on what is known about BHP biosynthetic pathways in bacteria, however, it is unlikely that a change in chemical composition would result in reconfiguration of BHP headgroups at a rate even remotely comparable to that of the carbonate system. The BHP formylhopane is thought to be a precursor molecule that can either be reduced to a tetrol headgroup, or aminated to an aminotriol headgroup by the aminotransferase HpnO \citep{welander2012identification}. Therefore, it is unlikely that there would be a direct reaction of a polyol heagroup with ammonia to form an aminopolyol headgroup, as was posited earlier. This does not preclude the possibility that thermodynamic equilibrium among BHP headgroups could be converged upon indirectly; increased ammonia concentration might drive the glutamate dehydrogenase-catalyzed reaction of $\alpha$-ketoglutarate to form glutamate \citep{}, followed by the HpnO-catalyzed reaction of glutamate and formylhopane to $\alpha$-ketoglutarate and a BHP aminopolyol, conceivably leading to an increase in the fractional abundance of aminopolyol BHP headgroups.  However, experiments performed on \textit{Desulfovibrio bastinii} showed no obvious difference in aminopolyol headgroup fraction between cultures growing with and without ammonium \citep{blumenberg2012novel}, though it should be noted that the studied microorganism was capable of fixing its own nitrogen. It is still uncertain, then, whether bacteria metabolically shift fractional abundances of their BHP headgroups into configurations approaching thermodynamic equilibrium (at least in the case of ammonia and aminopolyols).
-
-Approach to equilibrium in 
-
-
-
-
-in an effort to save cellular energy
-
-
+Eh\textsubscript{BHP, head} was predicted based only on the ratio of summed pentafunctional to tetrafunctional BHP headgroups. This was mostly due of the dominance of these headgroups among samples, but partly because thermodynamic predictions appeared to significantly overestimate the abundance of trace hexafunctional BHPs. Conversely, observed abundances of aminopolyols was underestimated by thermodynamic predictions by about 1-2 orders of magnitude. This opens the door to future work evaluating the sources of these discrepancies between predicted and observed BHP abundances; whether they stem from analytical uncertainty, underlying thermodynamic assumptions, or biological membrane functional requirements necessitating a higher energy cost.
 
 \section{Methods}
 
@@ -44,7 +51,9 @@ Methods used to meter, collect, and analyze water samples are described in Chapt
 
 Aliquots of TLE set aside for BHP analysis were prepared for HPLC-MS as described in \cite{talbot2003atmospheric}. Briefly, BHPs were converted into their acetate derivative by heating aliquots of TLE in 1:1 v/v acetic anhydride and pyridine at 50$^{\circ}$ for 1 hour, leaving at room temperature overnight, drying under N$_2$, and then redissolving in methanol. Resulting TLEs were then injected Agilent 1200 Series HPLC equipped with a binary pump linked to an Agilent Q-TOF 6520 MS with a Poroshell 120 EC-C18 column and atmospheric pressure chemical ionization (APCI) source operated in positive ion mode. The column was first eluted isocratically with 100\% solvent A (95:5 MeOH:water) for 2 min, followed by a linear gradient to 20\% solvent B (isopropanol) for 18 minutes, then held isocratically for 10 min. The linear gradient continued to 30\% B over 10 min, held for 5 min, brought up to 80\% B over 1 min, then maintained for 14 min. The column was then eluted with 100\% A for 5 minutes. The flow rate throughout analysis was 0.19 mL min$^{-1}$.
 
-BHPs were identified based on the exact masses of their protonated molecular ions at the MS level, their relative retention times, and by referencing MS/MS fragmentation patterns to published spectra \citep{talbot2005bacteriohopanepolyols, talbot2007rapid, talbot2007structural, talbot2003atmospheric, talbot2003characteristic, talbot2008cyanobacterial}. Tetra-, penta-, and hexafunctional composite BHPs were identified by diagnostic fragments 655.49, 713.50, and 771.50, for BHPs without a 2- or 3-methylation, and 669.51, 727.51, and 785.52, for BHPs with a 2- or 3-methylation, respectively, which correspond to the monoisotopic mass of the acetylated BHPs after loss of a composite group fragment. Relative BHP within-sample abundances were obtained semi-quantitatively by comparing ratios of integrated peak areas of parent ions.
+BHPs were identified based on the exact masses of their protonated molecular ions at the MS level, their relative retention times, and by referencing MS/MS fragmentation patterns to published spectra \citep{talbot2005bacteriohopanepolyols, talbot2007rapid, talbot2007structural, talbot2003atmospheric, talbot2003characteristic, talbot2008cyanobacterial}. Diagnostic fragments m/z 191.18 and 205.20 indicating hopanoid C-ring cleavage were used to identify nonmethylated and methylated hopanoids, respectively. Tetra-, penta-, or hexafunctional BHPs were identified by fragments corresponding to the monoisotopic mass of acetylated polyol BHPs after loss of an acetyl or composite group fragment, namely m/z 655.49, 713.50, or 771.50 for polyol BHPs without a 2- or 3-methylation, and m/z 669.51, 727.51, or 785.52 for polyol BHPs with a 2- or 3-methylation. Aminopolyols were identified based on the m/z of the parent ion plus an proton adduct ([M + H]\textsuperscript{+}), and fragments at the MS/MS level indicating acetyl group loss. Aminopolyols with composite groups were not observed. Varying abundance of adenosylhopane was observed across samples, but was not included in this study because its headgroup functionality is not readily comparable to other BHPs, and because it may serve mainly as a intermediate in BHP biosynthesis \citep{bradley2010adenosylhopane}. Anhydrobacteriohopanepolyols were observed but were not counted, as they are thought to be BHP degradation products \citep{talbot2005bacteriohopanepolyols, schaeffer2008acid}. Relative BHP within-sample abundances were obtained semi-quantitatively by comparing ratios of integrated peak areas of parent ions.
+
+
 
 \subsection{Estimation of standard state thermodynamic properties of BHP polar headgroups.}
 The workflow used to estimate standard state partial molal thermodynamic properties of aqueous BHP headgroups is shown schematically in Figure \ref{fig:BHP_thermoest_paper}. Estimations of tetra-, penta-, and hexafunctional BHP headgroups began with the properties of 1,2,3,4-butanetetrol, 1,2,3,4,5-pentanepentol, and 1,2,3,4,5,6-hexanehexol, respectively (Figure \ref{fig:BHP_thermoest_paper}A), which are given in \ref{tab:sa_regress}. The properties of these non-stereoisomeric sugar alcohols were estimated from linear equations obtained by regressing available $\Delta_{f}G^{\circ}_{aq}$, $\Delta_{f}H^{\circ}_{aq}$, $Cp^{\circ}_{aq}$, $V^{\circ}_{aq}$, and $\Delta_{h}G^{\circ}_{aq}$ of sugar alcohol diastereomers as a function of carbon length, shown in Figure \ref{fig:polyol_prop_regress}. Properties of sugar alcohol diasteromers and their literature sources are given in Table \ref{tab:sug_alc}.
@@ -69,12 +78,70 @@ A separate calculation was performed to predict the abundance of aminopolyol BHP
 
 Percent abundance of BHP headgroup functionality is shown for all hot spring samples in Figure \ref{fig:BHP_abund}. Tetrol (BHT with and without composite groups) was the dominant BHP headgroup in most samples, followed by pentols (BHpentol with and without composite groups). The ratio of pentol to tetrol saw a sharp increase in most samples representative of photosynthetic mats, such as BP4, BP5, and MS4. The mat sample of Octopus Spring, OS2, did not differ much from its upstream sample, OS1, however. Empress Pool, which did not have a visible cyanobacterial mat, still showed an increase in pentol to tetrol ratio within the temperature regime one would expect a photosynthetic mat in the other three springs. Interestingly, many samples that were most distal from their respective hot spring source, such as BP6, MS5, and EP5, saw a significant decrease in pentol to tetrol ratio. Samples BP6 and MS5 correspond to post-mat locations with microbial communities visually-distinct from those in the mat, and sample EP5, while relatively indistinguishable from samples immediately upstream from it, had a temperature about similar to MS5. BHPs with aminotriol headgroups were proportionally most abundant in samples belonging to Empress Pool, making up about 10\% of the total BHP headgroups observed at EP1 and EP4. Elsewhere, the abundance of aminotriol was rarely over 5\%. Aminotetrol was not observed in this sample set. Hexafunctional headgroups were observed in low abundance only in photosynthetic mat samples; with 2-5\% hexol in BP4 and MS4, and a trace amounts ($<$ 1\%) of aminopentol in BP4.
 
-The weighted Z\textsubscript{C} of tetrafunctional, pentafunctional, and hexafunctional polyol and aminopolyol BHP headgroups (calculated for their non-composite form) are given in Table \ref{tab:BHP_redox_table}. Each step increase in the functionality of a BHP headgroup is accompanied by a change of +??? in Z\textsubscript{C}, and as such, samples with a greater ratio of higher-functionality BHP headgroups exhibited a higher weighted Z\textsubscript{C} . As shown in the top two panels of Figure \ref{fig:BHP_ZC_Eh_fourpanel}, weighted Z\textsubscript{C} did not have a strong linear correlation with temperature ($R^{2} = 0.20$) or Eh from the O\textsubscript{2}/H\textsubscript{2}O redox couple ($R^{2} = 0.06$), nor did it correlate with concentration of dissolved oxygen ($R^{2} = 0.16$, not shown). Unlike the clear, linear increase of alkyl chain Z\textsubscript{C} with decreasing temperature, the rise in BHP headgroup Z\textsubscript{C} downstream is punctuated by a sudden drop, indicating the onset of BHP headgroups with relatively reduced carbon in low temperature samples. Recall that BHP headgroups tetrol and pentol made up the majority of headgroups in this sample set, and that the pentol to tetrol ratio tended to be greatest in downstream mat samples spanning an approximate range of 40-74$^{\circ}$C, resulting in the relatively high Z\textsubscript{C} for BHP headgroups at these sites. The sudden decrease in pentol to tetrol ratio in the post-mat samples is responsible for the dip in Z\textsubscript{C} at the lowest-temperature sites.
-Taken together, Z\textsubscript{C} as a predictive proxy for adaptation in BHP headgroup functionality temperature and chemical composition is not as easily interpretable as it appears to be for alkyl chains (Chapter \ref{ch1}). However, despite the linear correlation of alkyl chain Z\textsubscript{C} with temperature and co-varying log O\textsubscript{2} concentration, is interesting to note that the Z\textsubscript{C} of alkyl chains does \textit{not} appear correlated with Eh calculated from the O\textit{2}/H\textit{2}O redox couple (top right panel of Figure \ref{fig:BHP_ZC_Eh_fourpanel}). A more in-depth thermodynamic analyses was required to provide evidence that downstream alkyl chain distributions follows an energetically favorable trajectory with respect to both temperature chemical composition, including redox (Chapter \ref{ch2}, also see bottom right panel of Figure \ref{fig:BHP_ZC_Eh_fourpanel}). A similar approach was taken to predict whether observed distributions in BHP headgroup functionality are on an energetically favorable trajectory downstream in such a way that is not apparent with Z\textsubscript{C}.
+The weighted Z\textsubscript{C} of tetrafunctional, pentafunctional, and hexafunctional polyol and aminopolyol BHP headgroups (calculated for their non-composite form) are given in Table \ref{tab:BHP_redox_table}. Each step increase in the functionality of a BHP headgroup is accompanied by a change of +$0.3\overline{6}$ in Z\textsubscript{C}, and as such, samples with a greater ratio of higher-functionality BHP headgroups exhibited a higher weighted Z\textsubscript{C} . As shown in the top two panels of Figure \ref{fig:BHP_ZC_Eh_fourpanel}, weighted Z\textsubscript{C} did not have a strong linear correlation with temperature ($R^{2} = 0.20$) or Eh from the O\textsubscript{2}/H\textsubscript{2}O redox couple ($R^{2} = 0.06$), nor did it correlate with concentration of dissolved oxygen ($R^{2} = 0.16$, not shown). Unlike the clear, linear increase of alkyl chain Z\textsubscript{C} with decreasing temperature, the rise in BHP headgroup Z\textsubscript{C} downstream is punctuated by a sudden drop, indicating the onset of BHP headgroups with relatively reduced carbon in low temperature samples. Recall that BHP headgroups tetrol and pentol made up the majority of headgroups in this sample set, and that the pentol to tetrol ratio tended to be greatest in downstream mat samples spanning an approximate range of 40-74$^{\circ}$C, resulting in the relatively high Z\textsubscript{C} for BHP headgroups at these sites. The sudden decrease in pentol to tetrol ratio in the post-mat samples is responsible for the dip in Z\textsubscript{C} at the lowest-temperature sites.
 
-Tetrafunctional BHP headgroups are predicted to be stable in increasingly reduced conditions relative to pentafunctional headgroups, which are are stable in increasingly oxidized conditions, as shown in Figure \ref{fig:BHP_degree_formation_bison} for Bison Pool samples. At the temperature and basis species concentrations of sample BP1, metastable equilibrium calculations predict a fractional abundance of nearly 1 for tetrafunctional BHP headgroups an Eh of -0.2 volts and below, while pentafunctional headgroups are predicted to take over at an Eh above -0.08 volts. At approximately -1.45 volts, pentafunctional and tetrafunctional BHP headgroups are predicted to have the equal abundance, or a fractional abundance of 0.5 for each. Observed ratios of headgroup functionality in BHPs extracted from sample BP1 was about 12:88. The concentration of electrons in reactions to form BHP headgroups from basis species that would best predict a 12:88 penta- to tetrafunctionality ratio corresponds to an Eh of -0.175 volts in sample BP1. In samples BP2 and BP3, similar ratios in functionality are observed (about 14:86 and 10:90, respectively), though increasingly oxidized conditions (-1.64 and -0.153 volts) are required predict these ratios due to a decrease in temperature and a shift in chemical composition. Sample BP4 represents the onset of the photosynthetic microbial mat and marks the first time in Bison Pool where pentafunctional headgroups become more abundant than tetrafunctional headgroups by a ratio of about 53:47. Intriguingly, metastable equilibrium predicts that at the temperature and basis species concentrations of BP4, the Eh that best describes this headgroup functionality ratio is -0.153 volts, which is identical to that of BP3. An Eh of -0.110, the most oxidized conditions predicted for Bison Pool yet, is needed to explain the pentafunctional to tetrafunctional headgroup ratio at BP5, which reached its peak of 62:38 for this spring. In the post-mat sample BP6, the abundance of pentafunctional headgroups had diminished substantially to a ratio of 2:98 predicted by metastable equilibrium abundances at an Eh of -0.190 volts. Metastable equilibrium abundances of pentafunctional and tetrafunctional BHP headgroups as a function of Eh in Mound Spring, Empress Pool, and Octopus Spring samples are shown in Table \ref{fig:BHP_degree_formation}. Headgroup-predicted Eh values for all samples are given in Table \ref{tab:BHP_redox_table}.
+\afterpage{
+\singlespace
+\begin{table}
+\centering
+% \begin{adjustbox}{width=\linewidth,keepaspectratio}
+\begin{threeparttable}
+  \caption{Select geochemical and physical data for samples, calculated and lipid-predicted redox potentials, and the average oxidation state of carbon in BHP headgroups.}
 
-Temperature does not correlate with Eh predicted BHP headgroup functionality, as shown in the bottom left panel of Figure \ref{fig:BHP_ZC_Eh_fourpanel}.
+
+% Table generated by Excel2LaTeX from sheet 'TempEh_etc_noEh'
+\begin{tabular}{ccccccc}
+\toprule
+      &       &       &       & Weighted Z\textsubscript{C} & \multicolumn{2}{c}{Lipid-predicted Eh, volts} \\
+\cmidrule{6-7}Site  & Sample & T, $\degree$C & pH    & BHP headgroups & Eh\textsubscript{alkyl}\rtr{IPLtails} & Eh\textsubscript{BHP, head}\rtr{BHPheads} \\
+\midrule
+Bison & BP1   & 89.0  & 7.23  & -1.10 & -0.496 & -0.175 \\
+Pool  & BP2   & 80.9  & 7.34  & -1.09 & -0.463 & -0.164 \\
+      & BP3   & 73.3  & 7.27  & -1.09 & -0.435 & -0.153 \\
+      & BP4   & 63.1  & 8.09  & -0.78 & -0.469 & -0.153 \\
+      & BP5   & 40.5  & 8.25  & -0.42 & -0.397 & -0.110 \\
+      & BP6   & 29.0  & 9.01  & -1.09 & -0.339 & -0.190 \\
+      &       &       &       &       &       &  \\
+Mound & MS1   & 91.0  & 8.81  & -1.10 & -0.606 & -0.299 \\
+Spring & MS2   & 77.3  & 8.65  & -1.07 & -0.555 & -0.245 \\
+      & MS3   & 64.8  & 9.08  & -1.13 & -0.553 & -0.292 \\
+      & MS4   & 53.0  & 9.22  & -0.65 & -0.520 & -0.210 \\
+      & MS5   & 35.1  & 9.53  & -1.12 & -0.441 & -0.251 \\
+      &       &       &       &       &       &  \\
+Empress & EP1   & 82.2  & 5.78  & -1.13 & -0.364 & -0.101 \\
+Pool  & EP2   & 70.5  & 6.96  & -0.83 & -     & - \\
+      & EP3   & 60.7  & 7.63  & -0.51 & -0.436 & -0.113 \\
+      & EP4   & 51.6  & 7.99  & -0.60 & -0.426 & -0.120 \\
+      & EP5   & 38.1  & 8.42  & -0.75 & -0.396 & -0.141 \\
+      &       &       &       &       &       &  \\
+Octopus & OS1   & 85.4  & 7.29  & -1.00 & -0.452 & -0.159 \\
+Spring & OS2   & 59.8  & 8.27  & -0.83 & -0.482 & -0.176 \\
+\bottomrule
+\end{tabular}%
+
+
+  \begin{tablenotes}
+    Dashed entries represent samples where a particular Eh could not be calculated or estimated. See text.
+    
+    \tr{IPLtails} Eh predicted from alkyl chains of IPLs as reported in Chapter \ref{ch2},
+    \tr{BHPheads} Eh predicted by BHP polar headgroups (this work)
+        
+  \end{tablenotes}
+  
+  \label{tab:BHP_redox_table}
+  \end{threeparttable}
+%   \end{adjustbox}
+\end{table}
+\doublespace
+\setcounter{tabcounter}{0} % reset custom table footnote counter
+\clearpage
+}
+
+Taken together, Z\textsubscript{C} as a predictive proxy for adaptation in BHP headgroup functionality temperature and chemical composition is not as easily interpretable as it appears to be for alkyl chains (Chapter \ref{ch1}). However, despite the linear correlation of alkyl chain Z\textsubscript{C} with temperature and co-varying log O\textsubscript{2} concentration, is interesting to note that the Z\textsubscript{C} of alkyl chains does \textit{not} appear correlated with Eh calculated from the O\textsubscript{2}/H\textsubscript{2}O redox couple (top right panel of Figure \ref{fig:BHP_ZC_Eh_fourpanel}). A more in-depth thermodynamic analyses was required to provide evidence that downstream alkyl chain distributions follows an energetically favorable trajectory with respect to both temperature chemical composition, including redox (Chapter \ref{ch2}, also see bottom right panel of Figure \ref{fig:BHP_ZC_Eh_fourpanel}). A similar approach was taken to predict whether observed distributions in BHP headgroup functionality are on an energetically favorable trajectory downstream in such a way that is not apparent with Z\textsubscript{C}.
+
+Tetrafunctional BHP headgroups are predicted to be stable in increasingly reduced conditions relative to pentafunctional headgroups, which are are stable in increasingly oxidized conditions, as shown in Figure \ref{fig:BHP_degree_formation_bison} for Bison Pool samples. At the temperature and basis species concentrations of sample BP1, metastable equilibrium calculations predict a fractional abundance of nearly 1 for tetrafunctional BHP headgroups an Eh of -0.2 volts and below, while pentafunctional headgroups are predicted to take over at an Eh above -0.08 volts. At approximately -1.45 volts, pentafunctional and tetrafunctional BHP headgroups are predicted to have the equal abundance, or a fractional abundance of 0.5 for each. Observed ratios of headgroup functionality in BHPs extracted from sample BP1 was about 12:88. The concentration of electrons in reactions to form BHP headgroups from basis species that would best predict a 12:88 penta- to tetrafunctionality ratio corresponds to an Eh\textsubscript{BHP, head} of -0.175 volts in sample BP1. In samples BP2 and BP3, similar ratios in functionality are observed (about 14:86 and 10:90, respectively), though increasingly oxidized conditions (-1.64 and -0.153 volts) are required predict these ratios due to a decrease in temperature and a shift in chemical composition. Sample BP4 represents the onset of the photosynthetic microbial mat and marks the first time in Bison Pool where pentafunctional headgroups become more abundant than tetrafunctional headgroups by a ratio of about 53:47. Intriguingly, metastable equilibrium predicts that at the temperature and basis species concentrations of BP4, the Eh\textsubscript{BHP, head} that best describes this headgroup functionality ratio is -0.153 volts, which is identical to that of BP3. An Eh\textsubscript{BHP, head} of -0.110, the most oxidized conditions predicted for Bison Pool yet, is needed to explain the pentafunctional to tetrafunctional headgroup ratio at BP5, which reached its peak of 62:38 for this spring. In the post-mat sample BP6, the abundance of pentafunctional headgroups had diminished substantially to a ratio of 2:98 predicted by an Eh\textsubscript{BHP, head} of -0.190 volts. Metastable equilibrium abundances of pentafunctional and tetrafunctional BHP headgroups as a function of Eh in Mound Spring, Empress Pool, and Octopus Spring samples are shown in Table \ref{fig:BHP_degree_formation}. Eh\textsubscript{BHP, head} values for all samples are given in Table \ref{tab:BHP_redox_table}.
+
+Temperature does not correlate with Eh\textsubscript{BHP, head}, as shown in the bottom left panel of Figure \ref{fig:BHP_ZC_Eh_fourpanel}.
 
 
 
@@ -124,7 +191,21 @@ Activity diagrams showing degree of formation as a consequence of relative stabi
 
 
 \section{Discussion}
-Discussion
+
+
+% Possible discussion material
+% First, revisit carbonate system from intro
+% Revisit equilibrium assumptions. Essentially; life is not in equilibrium. However, it still has to make itself from nutrients and energy supplies available to it. Organisms that make the best use of their surroundings have a competitive edge, and are said to be 'adapted'. One way that an organism can make the best use of its surroundings is by substituting readily-available materials into its biomolecules. Even if the substituted biomolecule does not function as well, the energy saved could be diverted elsewhere in the organism to provide an overall net competitive advantage. This natural cost/benefit analysis may be the reason why we see changes in metagenome-encoded peptide sequences change in an energetically-favorable way along a temperature/redox gradient (Jeff), or why lime disease spirochete no longer requires iron, or why genomically encoded survival mechanisms offer alternative pathways for creating substituted molecules (iron and vanadium nitrogenases, nitrogen lipids in place of phospholipids). So how does an organism save biosynthetic energy in in over the course of evolutionary history? One strategy might be to make functional biomolecules out of what's available. Minimize the gibbs free energy of the reaction to form the biomolecule out of available materials. Potentially less ATP or NADH(P) or proton gradient or whatever is needed that way.
+
+% final point: observed BHP composition may reflect adaptations that are energetically-driven. Minimization of gibbs free energy of reactions forming BHPs. Use equilibrium thermodynamic assumptions and observations of thermal and geochemical conditions to evaluate 'Eh', which is unknown (also, system does not have one Eh). Although there is no single Eh, there are Eh TRENDS. Does Eh predicted from headgroups correlate positively with Eh from inorganic species? If so, provides evidence that observed BHP distributions in microbial communities are approaching to equilibrium with respect to their biomolecular composition -> saving energy -> adaptation. May not be AT equilibrium, but doing best to approach it while remaining competitive.
+
+% Future work - constraining aminopolyol and hexafunctional predictions. Do hexafuntional BHPs have a different function altogether? Too many hydroxyl groups to be functional in most membranes?
+
+Based on what is known about BHP biosynthetic pathways in bacteria, however, it is unlikely that a change in chemical composition would result in reconfiguration of BHP headgroups at a rate even remotely comparable to that of the carbonate system. The BHP formylhopane is thought to be a precursor molecule that can either be reduced to a tetrol headgroup, or aminated to an aminotriol headgroup by the aminotransferase HpnO \citep{welander2012identification}. Therefore, it is unlikely that there would be a direct reaction of a polyol heagroup with ammonia to form an aminopolyol headgroup, as was posited earlier. This does not preclude the possibility that thermodynamic equilibrium among BHP headgroups could be converged upon indirectly; increased ammonia concentration might drive the glutamate dehydrogenase-catalyzed reaction of $\alpha$-ketoglutarate to form glutamate \citep{}, followed by the HpnO-catalyzed reaction of glutamate and formylhopane to $\alpha$-ketoglutarate and a BHP aminopolyol, conceivably leading to an increase in the fractional abundance of aminopolyol BHP headgroups.  However, experiments performed on \textit{Desulfovibrio bastinii} showed no obvious difference in aminopolyol headgroup fraction between cultures growing with and without ammonium \citep{blumenberg2012novel}, though it should be noted that the studied microorganism was capable of fixing its own nitrogen. It is still uncertain, then, whether bacteria metabolically shift fractional abundances of their BHP headgroups into configurations approaching thermodynamic equilibrium (at least in the case of ammonia and aminopolyols).
+
+Approach to equilibrium in an effort to save cellular energy
+
+
 % Previous work showed that ZC of IPLs increased with temperature or DO and that changes in the nonpolar tailgroups were mainly responsible. The ZC of IPL headgroups, however, did not follow this trend. The question arises, is this trend purely a result of the semiquantitative nature of the analysis (response factors, etc.) that tailgroups are less susceptible to, or a reflection of a real trend? If the latter is true, does going against the ZC trend cost extra?
 
 % Like IPL headgroups, the weighted ZC of BHP headgroups does not behave with temperature, O2, or Eh. Does this imply increased cost?
@@ -382,21 +463,22 @@ ethanolammonium & -192.5\rtr{Gfethanolaminerxn} & -332.3\rtr{Hfethanolaminerxn} 
 
 
 % Table generated by Excel2LaTeX from sheet 'BHP chain properties'
-\begin{tabular}{llrerererererererererererer}
+\begin{tabular}{llrrrrrrrrrrrrr}
 \toprule
 BHP headgroup & formula & $\Delta_{f}G^{\circ}_{aq}$\rtr{kjpermol} & $\Delta_{f}H^{\circ}_{aq}$\rtr{kjpermol} & $S^{\circ}_{aq}$\rtr{jpermolk} & $Cp^{\circ}_{aq}$\rtr{jpermolk} & $V^{\circ}_{aq}$\rtr{cm3permol} & $a_{1}$\rtr{jpermolbar}$\times 10$ & $a_{2}$\rtr{jpermol}$\times 10^{-2}$ & $a_{3}$\rtr{jKpermolbar} & $a_{4}$\rtr{jKpermol}$\times 10^{-4}$ & $c_{1}$\rtr{jpermolk} & $c_{2}$\rtr{jKpermolbar}$\times 10^{-4}$ & $\omega$\rtr{jpermol}$\times 10^{-5}$ & $\Delta_{h}G^{\circ}$\rtr{kjpermol} \\
 \midrule
-tetrol & C\textsubscript{6}H\textsubscript{13}O\textsubscript{4} & -592.8 & -974.1 & 15.38 & 576   & 139.66 & 129   & 51.8  & 99.4  & -43.1 & 636   & -27.6 & 0.424 & -57.7 \\
-pentol & C\textsubscript{6}H\textsubscript{13}O\textsubscript{5} & -753.4 & -1162.1 & 25.91 & 552   & 140.15 & 134   & 42.7  & 85.3  & -39.4 & 638   & -39.2 & 0.610 & -71.4 \\
-hexol & C\textsubscript{6}H\textsubscript{13}O\textsubscript{6} & -914.0 & -1350.2 & 36.43 & 528   & 140.63 & 138   & 33.5  & 70.9  & -35.6 & 638   & -50.9 & 0.766 & -85.2 \\
-aminotriol & C\textsubscript{6}H\textsubscript{14}NO\textsubscript{3} & -398.2 & -796.0 & 18.23 & 559   & 144.26 & 130   & 63.2  & 117   & -48.6 & 593   & -15.7 & 0.196 & -43.6 \\
-aminotetrol & C\textsubscript{6}H\textsubscript{14}NO\textsubscript{4} & -558.8 & -984.1 & 28.76 & 535   & 144.75 & 134   & 53.8  & 103   & -44.6 & 595   & -27.3 & 0.420 & -57.4 \\
-aminopentol & C\textsubscript{6}H\textsubscript{14}NO\textsubscript{5} & -719.4 & -1172.1 & 39.28 & 511   & 145.23 & 138   & 44.4  & 87.6  & -40.6 & 596   & -39.0 & 0.606 & -71.1 \\
-amminiumtriol & C\textsubscript{6}H\textsubscript{15}NO\textsubscript{3}\textsuperscript{+} & -452.1 & -844.6 & 36.01 & 564   & 138.06 & 198   & -130  & -188  & 32.6  & 1110  & -259  & 1.84  & -330 \\
-amminiumtetrol & C\textsubscript{6}H\textsubscript{15}NO\textsubscript{4}\textsuperscript{+} & -612.7 & -1033.0 & 46.53 & 540   & 138.55 & 202   & -139  & -204  & 36.8  & 1110  & -271  & 1.86  & -344 \\
-amminiumpentol & C\textsubscript{6}H\textsubscript{15}NO\textsubscript{5}\textsuperscript{+} & -773.3 & -1220.7 & 57.06 & 516   & 139.03 & 206   & -149  & -220  & 41.0  & 1110  & -282  & 1.89  & -358 \\
+tetrol & C\textsubscript{8}H\textsubscript{17}O\textsubscript{4} & -592.8 & -974.1 & 15.38 & 576   & 139.66 & 129   & 51.8  & 99.4  & -43.1 & 636   & -27.6 & 0.424 & -57.7 \\
+pentol & C\textsubscript{8}H\textsubscript{17}O\textsubscript{5} & -753.4 & -1162.1 & 25.91 & 552   & 140.15 & 134   & 42.7  & 85.3  & -39.4 & 638   & -39.2 & 0.610 & -71.4 \\
+hexol & C\textsubscript{8}H\textsubscript{17}O\textsubscript{6} & -914.0 & -1350.2 & 36.43 & 528   & 140.63 & 138   & 33.5  & 70.9  & -35.6 & 638   & -50.9 & 0.766 & -85.2 \\
+aminotriol & C\textsubscript{8}H\textsubscript{18}NO\textsubscript{3} & -398.2 & -796.0 & 18.23 & 559   & 144.26 & 130   & 63.2  & 117   & -48.6 & 593   & -15.7 & 0.196 & -43.6 \\
+aminotetrol & C\textsubscript{8}H\textsubscript{18}NO\textsubscript{4} & -558.8 & -984.1 & 28.76 & 535   & 144.75 & 134   & 53.8  & 103   & -44.6 & 595   & -27.3 & 0.420 & -57.4 \\
+aminopentol & C\textsubscript{8}H\textsubscript{18}NO\textsubscript{5} & -719.4 & -1172.1 & 39.28 & 511   & 145.23 & 138   & 44.4  & 87.6  & -40.6 & 596   & -39.0 & 0.606 & -71.1 \\
+amminiumtriol & C\textsubscript{8}H\textsubscript{19}NO\textsubscript{3}\textsuperscript{+} & -452.1 & -844.6 & 36.01 & 564   & 138.06 & 198   & -130  & -188  & 32.6  & 1110  & -259  & 1.84  & -330 \\
+amminiumtetrol & C\textsubscript{8}H\textsubscript{19}NO\textsubscript{4}\textsuperscript{+} & -612.7 & -1033.0 & 46.53 & 540   & 138.55 & 202   & -139  & -204  & 36.8  & 1110  & -271  & 1.86  & -344 \\
+amminiumpentol & C\textsubscript{8}H\textsubscript{19}NO\textsubscript{5}\textsuperscript{+} & -773.3 & -1220.7 & 57.06 & 516   & 139.03 & 206   & -149  & -220  & 41.0  & 1110  & -282  & 1.89  & -358 \\
 \bottomrule
 \end{tabular}%
+
 
 
 
@@ -433,80 +515,6 @@ amminiumpentol & C\textsubscript{6}H\textsubscript{15}NO\textsubscript{5}\textsu
 
 
 
-% \newgeometry{margin=1.5cm} % modify this if you need even more space
-% \centering
-\begin{landscape}
-\singlespace
-
-\begin{table}
-\centering
-\begin{adjustbox}{width=600pt,keepaspectratio}
-\begin{threeparttable}
-  \caption{Select geochemical and physical data for samples, calculated and lipid-predicted redox potentials, and the average oxidation state of carbon in BHP headgroups.}
-
-
-%{ccccececececccc}
-
-% Table generated by Excel2LaTeX from sheet 'TempEh_etc'
-\begin{tabular}{ccccececececccc}
-\toprule
-      &       &       &       & \multicolumn{4}{c}{Eh, volts\rtr{Eh_couples}} & \multicolumn{2}{c}{Lipid-predicted Eh, volts} & Weighted Z\textsubscript{C} \\
-\cmidrule(l{2pt}r{2pt}){5-8} \cmidrule(l{2pt}r{2pt}){9-10}Site  & Sample & T, $\degree$C & pH    & \big[O\textsubscript{2}/H\textsubscript{2}O\big]\rtr{redox_O2H2O} & \big[NO\textsubscript{2}\textsuperscript{-}/NO\textsubscript{3}\textsuperscript{-}\big]\rtr{redox_NO2NO3} & \big[NH\textsubscript{4}\textsuperscript{+}/NO\textsubscript{3}\textsuperscript{-}\big]\rtr{redox_NH4NO3} & \big[HS\textsuperscript{-}/SO\textsubscript{4}\textsuperscript{2-}\big]\rtr{redox_HSSO4} & IPL tails\rtr{IPLtails} & BHP heads\rtr{BHPheads} & BHP headgroups \\
-\midrule
-Bison & BP1   & 89.0  & 7.23  & 0.662 & 0.303 & 0.237 & -0.294 & -0.496 & -0.175 & -1.10 \\
-Pool  & BP2   & 80.9  & 7.34  & 0.679 & 0.295 & 0.242 & -0.292 & -0.463 & -0.164 & -1.09 \\
-      & BP3   & 73.3  & 7.27  & 0.698 & 0.339 & 0.262 & -     & -0.435 & -0.153 & -1.09 \\
-      & BP4   & 63.1  & 8.09  & 0.666 & 0.293 & 0.215 & -0.316 & -0.469 & -0.153 & -0.78 \\
-      & BP5   & 40.5  & 8.25  & 0.707 & -     & 0.242 & -0.298 & -0.397 & -0.110 & -0.42 \\
-      & BP6   & 29.0  & 9.01  & 0.676 & -     & 0.212 & -0.335 & -0.339 & -0.190 & -1.09 \\
-      &       &       &       &       &       &       &       &       &       &  \\
-Mound & MS1   & 91.0  & 8.81  & 0.550 & -     & 0.101 & -0.429 & -0.606 & -0.299 & -1.10 \\
-Spring & MS2   & 77.3  & 8.65  & 0.601 & -     & 0.145 & -0.397 & -0.555 & -0.245 & -1.07 \\
-      & MS3   & 64.8  & 9.08  & 0.592 & 0.228 & 0.094 & -0.407 & -0.553 & -0.292 & -1.13 \\
-      & MS4   & 53.0  & 9.22  & 0.613 & 0.237 & 0.144 & -0.395 & -0.520 & -0.210 & -0.65 \\
-      & MS5   & 35.1  & 9.53  & 0.634 & -     & -     & -     & -0.441 & -0.251 & -1.12 \\
-      &       &       &       &       &       &       &       &       &       &  \\
-Empress & EP1   & 82.2  & 5.78  & 0.781 & 0.392 & 0.367 & -0.159 & -0.364 & -0.101 & -1.13 \\
-Pool  & EP2   & 70.5  & 6.96  & -     & -     & -     & -     & -     & -     & -0.83 \\
-      & EP3   & 60.7  & 7.63  & 0.696 & -     & 0.242 & -0.280 & -0.436 & -0.113 & -0.51 \\
-      & EP4   & 51.6  & 7.99  & 0.688 & 0.309 & 0.231 & -0.295 & -0.426 & -0.120 & -0.60 \\
-      & EP5   & 38.1  & 8.42  & 0.692 & 0.328 & 0.229 & -0.306 & -0.396 & -0.141 & -0.75 \\
-      &       &       &       &       &       &       &       &       &       &  \\
-Octopus & OS1   & 85.4  & 7.29  & 0.672 & 0.314 & 0.243 & -0.283 & -0.452 & -0.159 & -1.00 \\
-Spring & OS2   & 59.8  & 8.27  & 0.662 & 0.285 & 0.206 & -0.328 & -0.482 & -0.176 & -0.83 \\
-\bottomrule
-\end{tabular}%
-
-
-
-
-  \begin{tablenotes}
-    Dashed entries represent samples where a particular Eh could not be calculated or estimated. See text.
-    
-    % The order of footnotes here will determine their letter in the table
-    \tr{Eh_couples} Eh calculated using EQ3/6 geochemical aqueous modelling software,
-    \tr{redox_O2H2O} Eh calculated from the redox couple $\frac{1}{2}O_{2} + 2H^{+} + 2e^{-} = H_{2}O$,
-    \tr{redox_NO2NO3} Eh calculated from the redox couple $NO_{2}^{-} + H_{2}O = NO_{3}^{-}+ 2H^{+} + 2e^{-}$,
-    \tr{redox_NH4NO3} Eh calculated from the redox couple $NH_{4}^{+} + 3H_{2}O = NO_{3}^{-}+ 10H^{+} + 8e^{-}$,
-    \tr{redox_HSSO4} Eh calculated from the redox couple $HS^{-} + 4H_{2}O = SO_{4}^{2-}+ 9H^{+} + 8e^{-}$,
-    \tr{IPLtails} Eh predicted from alkyl chains of IPLs as reported in \cite{boyer2018thermodynamic},
-    \tr{BHPheads} Eh predicted by BHP polar headgroups (this work)
-
-
-        
-  \end{tablenotes}
-  
-  \label{tab:BHP_redox_table}
-  \end{threeparttable}
-  \end{adjustbox}
-\end{table}
-
-% to get nicer header midrules, replace \cmidrule{5-10} with
-% \cmidrule(l{2pt}r{2pt}){5-8} \cmidrule(l{2pt}r{2pt}){9-10}
-\doublespace
-\end{landscape}
-% \restoregeometry
-\setcounter{tabcounter}{0} % reset custom table footnote counter
 
 
 
