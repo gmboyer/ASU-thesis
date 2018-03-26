@@ -47,6 +47,27 @@
 }
 
 
+%-- Defines a CAPTION for a set of equations and numbers
+%   the set of equations is numbered
+% note: the caption adapts the text alignment to the length. 
+\newcounter{captionedequationset} %numbering
+\newdimen\captionlength
+\newcommand{\captionedequationset}[1]{
+    \refstepcounter{captionedequationset}% Step counter
+    \setlength{\captionlength}{\widthof{#1}} %
+    \addtolength{\captionlength}{\widthof{ }}
+    %If the caption is shorter than the line width then
+    % the caption is centred, otherwise is flushed left.
+    \ifthenelse{\lengthtest{\captionlength < \linewidth }} %
+    {\begin{center}
+            #1
+        \end{center}} 
+    {  
+        #1 %
+        }}
+
+
+
 
 
 %%% Code required to make evenly-spaced columns in table.
@@ -165,9 +186,11 @@
 %-----------------------body
 \doublespace
 \pagenumbering{arabic}
+\include{chapter_introduction}
 \include{chapter1}
 \include{chapter2}
 \include{chapter3}
+\include{chapter_conclusion}
 % \section{This is the title of the first section}
 % \subsection{The blurb}
 % This is chapter 1, in which I talk about all sorts of great stuff that's happening in and around the world.
