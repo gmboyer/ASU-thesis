@@ -111,15 +111,26 @@ The number of oxygen atoms ($o_{free}$) in the chemical formulae of sample-avera
 \noindent where $o_{linked}$ is the number of oxygen atoms in the sample-averaged IPL-linked alkyl chain. A number of oxygen atoms equal to $x_{ether}$ and $x_{ester}$ are added to $o_{linked}$ to account for the single oxygen atom in the hydroxyl groups of the resulting alcohol and carboxylic acid group assuming hypothetical hydrolysis of ether- and ester-linked chains to produce free fatty acids and fatty alcohols.
 
 \subsection{Calculation of thermodynamic properties}
-Partial molal thermodynamic properties $\Delta_{f}G_{aq}^{\circ}$, $\Delta_{f}H_{aq}^{\circ}$, $V_{aq}^{\circ}$, $Cp_{aq}^{\circ}$, $\Delta_{h}G^{\circ}$, of sample-averaged free alkyl chains were estimated with the equation
+Thermodynamic properties for sample-averaged free alkyl chains were estimated assuming the species were in the aqueous phase. The standard state convention for species in the aqueous phase assumed unit activity in a hypothetical 1 mol$\cdot$kg$^{-1}$ solution referenced to infinite dilution at any temperature and pressure. The standard state used for liquid water was one unit activity of pure H$_{2}$0 at any temperature and pressure. The standard state used for gaseous species was unit fugacity of the ideal gas at 1 bar and any temperature. Hydration properties were chosen to reflect the equilibrium process of transferring 1 mole of the species in the gas phase to the aqueous phase \citep{plyasunov2000thermodynamic}.
+
+Aqueous partial molal thermodynamic Gibbs free energies and enthalpies of formation from the elements ($\Delta_{f}G_{aq}^{\circ}$ and $\Delta_{f}H_{aq}^{\circ}$, respectively), volumes ($V_{aq}^{\circ}$), heat capacities ($Cp_{aq}^{\circ}$), and Gibbs free energies of the hydration process ($\Delta_{h}G^{\circ}$) were estimated for sample-averaged free alkyl chains in two steps. The goal of the first step was to estimate the properties of a saturated, straight aliphatic chain of length of nC and terminating at one end with a hybrid functional group. This hybrid group was a combination of alcohol, carboxylic acid, alkane, and amide, with the fraction of each set by observed mole fractions of ether, ester, C-C, and amide-linked IPL alkyl chains, respectively. The properties of this fatty alkyl chain, $\Xi_{fatty}$, were estimated with the equation
 
 \begin{align}
 \begin{split}
-\Xi_{chain} = & (m_{alcohol}\cdot \text{nC} + b_{alcohol})(x_{ether}) \\
+\Xi_{fatty} = & (m_{alcohol}\cdot \text{nC} + b_{alcohol})(x_{ether}) \\
             + & (m_{acid}\cdot \text{nC} + b_{acid})(x_{ester}) \\
             + & (m_{alkane}\cdot \text{nC} + b_{alkane})(x_{cc}) \\
-            + & (m_{acid}\cdot \text{nC} + b_{acid})(x_{amide}) \\
-            + & (\Delta\Xi_{amide})(x_{amide}) \\
+            + & (m_{acid}\cdot \text{nC} + b_{acid} + \Delta\Xi_{amide})(x_{amide}) \\
+\end{split}
+\end{align}
+
+\noindent where $m_{alcohol}$, $m_{acid}$, $m_{alkane}$, $b_{alcohol}$, $b_{acid}$, $b_{alkane}$ correspond to the slopes ($m$) and intercepts ($b$) of linear regressions of the value of each thermodynamic property as a function of chain length for fatty acids, fatty alcohols, and alkanes. These values are given in Table \ref{tab:regress_chain_prop}. $x_{ether}$, $x_{ester}$, $x_{cc}$, and $x_{amide}$ represent the mole fractions of ether-linked, ester-linked, CC-linked, amide-linked, and GDGT alkyl chains observed in the sample, respectively. $\Delta\Xi_{amide}$ indicates the estimated difference in the thermodynamic property between a fatty amid and fatty acid, which is given in Table \ref{tab:amide}. The first three terms of this equation use the slopes and intercepts of the regression of the property of interest to obtain the property of a straight fatty chain with a length equal to nC, and then weights the contributions of those properties by the mole fractions of observed IPL alkyl chain linkages; fatty alcohols, fatty acids, and fatty alkanes by the mole fractions of ethers, esters, and C-C linked alkyl chains, respectively. In the fourth term of the equation, a carboxylic acid of length nC was instead estimated by $m_{acid}\cdot \text{nC} + b_{acid}$, to which $\Delta\Xi_{amide}$ was added to convert the carboxylic acid into an amide. The contribution of fatty amides to $\Xi_{fatty}$ was not estimated by regression of aqueous amide properties in the same way as alcohols, carboxylic acids, and alkanes due to a lack of literature data, necessitating the carboxylic acid to amide correction, $\Delta\Xi_{amide}$.
+
+The thermodynamic contributions of unsaturation, chain hydroxylation, pentacyclic ring, hexacyclic ring, monolayer-forming, and isoprenoidal methylation properties were subsequently added to $\Xi_{fatty}$, each weighted by their observed per-chain abundance with the equation
+
+\begin{align}
+\begin{split}
+\Xi_{safac} = \Xi_{fatty}
             + & (\Delta\Xi_{unsat})(\text{nUnsat}) \\
             + & (\Delta\Xi_{hydroxyl})(\text{nOH}) \\
             + & (\Delta\Xi_{pent})(\text{nPent}) \\
@@ -129,9 +140,7 @@ Partial molal thermodynamic properties $\Delta_{f}G_{aq}^{\circ}$, $\Delta_{f}H_
 \end{split}
 \end{align}
 
-
-
-\noindent where $\Xi_{chain}$ designates the thermodynamic property to be estimated, $m_{alcohol}$, $m_{acid}$, $m_{alkane}$, $b_{alcohol}$, $b_{acid}$, $b_{alkane}$ correspond to the slopes ($m$) and intercepts ($b$) of linear regressions of the value of each thermodynamic property as a function of chain length for fatty acids, fatty alcohols, and alkanes given in Table \ref{tab:regress_chain_prop}, $x_{ether}$, $x_{ester}$, $x_{cc}$, and $x_{amide}$ represent the mole fractions of ether-linked, ester-linked, CC-linked, amide-linked, and GDGT alkyl chains observed in the sample, $x_{GDGT}$ corresponds to the mole fraction of alkyl chains belonging to GDGT given in Table \ref{tab:leftover_props},  nC, nUnsat, nHydrox, nPent, and nHex stand for the abundance-weighted average number of aliphatic carbons, unsaturations, hydroxylations, pentacyclic rings, and hexacyclic per alkyl chain observed in the sample, respectively, $\Delta\Xi_{amide}$ indicates the estimated difference in the thermodynamic property between a fatty amid and fatty acid taken from Table \ref{tab:amide}, $\Delta\Xi_{unsat}$ designates the estimated difference in the thermodynamic property between a monounsaturated and saturated chain taken from Table \ref{tab:unsat}, $\Delta\Xi_{hydroxyl}$ indicates the estimated difference in the thermodynamic property between a hydroxylated and nonhydroxylated chain taken from Table \ref{tab:grpadd_chain}, $\Delta\Xi_{pent}$ represents the estimated difference in the thermodynamic property between a chain with a pentacyclic ring and a noncyclic chain taken from Table \ref{tab:ring}, $\Delta\Xi_{hex}$ stands for the estimated difference in the thermodynamic property between a chain with a hexacyclic ring and a noncyclic chain taken from Table \ref{tab:ring}, $\Delta\Xi_{monolayer}$ corresponds to the estimated difference in the thermodynamic property between a monolayer-forming and bilayer-forming chain taken from Table \ref{tab:grpadd_chain}, $\Delta\Xi_{methyl}$ designates the estimated difference in the thermodynamic property between a methyl-branched and straight chain taken from Table \ref{tab:grpadd_chain}, and nMethyl represents the abundance-weighted number of methyl branches per alkyl chain. In this study, methyl branching could not be observed directly or quantified, therefore the value from nMethyl accounts only for methyl branching assumed present in isoprenoidally-derived alkyl chains, and as such should be interpreted as a minimum because non-isoprenoidal chains may also have methyl branching. The contribution of $\Delta\Xi_{methyl}$ tends to be minor relative to those from other alkyl chain modifications, so we do not expect variation due to uncertainty in nMethyl to have a considerable effect on $\Xi_{chain}$. The term nMethyl was estimated from
+\noindent where $\Xi_{safac}$ designates the thermodynamic property of the site-averaged free alkyl chain, $x_{GDGT}$ corresponds to the mole fraction of alkyl chains belonging to GDGT given in Table \ref{tab:leftover_props},  nC, nUnsat, nHydrox, nPent, and nHex stand for the abundance-weighted average number of aliphatic carbons, unsaturations, hydroxylations, pentacyclic rings, and hexacyclic per alkyl chain observed in the sample, respectively, $\Delta\Xi_{unsat}$ designates the estimated difference in the thermodynamic property between a monounsaturated and saturated chain taken from Table \ref{tab:unsat}, $\Delta\Xi_{hydroxyl}$ indicates the estimated difference in the thermodynamic property between a hydroxylated and nonhydroxylated chain taken from Table \ref{tab:grpadd_chain}, $\Delta\Xi_{pent}$ represents the estimated difference in the thermodynamic property between a chain with a pentacyclic ring and a noncyclic chain taken from Table \ref{tab:ring}, $\Delta\Xi_{hex}$ stands for the estimated difference in the thermodynamic property between a chain with a hexacyclic ring and a noncyclic chain taken from Table \ref{tab:ring}, $\Delta\Xi_{monolayer}$ corresponds to the estimated difference in the thermodynamic property between a monolayer-forming and bilayer-forming chain taken from Table \ref{tab:grpadd_chain}, $\Delta\Xi_{methyl}$ designates the estimated difference in the thermodynamic property between a methyl-branched and straight chain taken from Table \ref{tab:grpadd_chain}, and nMethyl represents the abundance-weighted number of methyl branches per alkyl chain. In this study, methyl branching could not be observed directly or quantified, therefore the value from nMethyl accounts only for methyl branching assumed present in isoprenoidally-derived alkyl chains, and as such should be interpreted as a minimum because non-isoprenoidal chains may also have methyl branching. The contribution of $\Delta\Xi_{methyl}$ tends to be minor relative to those from other alkyl chain modifications, so we do not expect variation due to uncertainty in nMethyl to have a considerable effect on $\Xi_{chain}$. The term nMethyl was estimated from
 
 \begin{equation}
 \text{nMethyl} = (\text{nC}/5 - \text{nPent} - \text{nHex})(x_{GDGT} + x_{AR})
@@ -140,7 +149,7 @@ Partial molal thermodynamic properties $\Delta_{f}G_{aq}^{\circ}$, $\Delta_{f}H_
 \noindent where $x_{AR}$ stands for the mole fraction of alkyl chains belonging to archaeol (AR), found in Table \ref{tab:leftover_props}. The term nC$/5$ is meant to account for one methyl branch per five carbons in isoprenoidally-derived alkyl chains, represented here as the sum of the mole fractions $x_{GDGT}$ and $x_{AR}$. Because each pentacyclic and hexacyclic ring incorporated into the alkyl chains of GDGTs replaces a methyl group, nPent and nHex are subtracted when determining number of methylations.
 
 
-\subsection{Calculation of sample-averaged free alkyl chain percent speciation at hot spring conditions.} The revised Helgeson-Kirkham-Flowers (HKF) equation of state \citep{shock1992calculation} was used to predict equilibrium constants for reactions at the temperatures measured for the hot spring sample locations. The HKF equation is shown in Appendix \ref{app2}, Equation \ref{eq:HKF_equation}. Equation of state parameters, a\textsubscript{1}, a\textsubscript{2}, a\textsubscript{3}, a\textsubscript{4}, c\textsubscript{1}, c\textsubscript{2}, and $\omega$, for sample-averaged free alkyl chain are reported in Table \ref{tab:IPL_thermo} and were estimated according to the correlation strategies described in \cite{plyasunov2001correlation} for aqueous polar organic nonelectrolytes.
+\subsection{Calculation of sample-averaged free alkyl chain percent speciation at hot spring conditions.} The revised Helgeson-Kirkham-Flowers (HKF) equation of state \citep{shock1992calculation} was used to predict equilibrium constants for reactions at the temperatures measured for the hot spring sample locations. The HKF equation is shown in Appendix \ref{app4}, Equation \ref{eq:HKF_equation}. Equation of state parameters, a\textsubscript{1}, a\textsubscript{2}, a\textsubscript{3}, a\textsubscript{4}, c\textsubscript{1}, c\textsubscript{2}, and $\omega$, for sample-averaged free alkyl chain are reported in Table \ref{tab:IPL_thermo} and were estimated according to the correlation strategies described in \cite{plyasunov2001correlation} for aqueous polar organic nonelectrolytes.
 
 Predictions of aqueous free alkyl chain relative abundances assumes thermodynamic equilibrium between the chain and a set of basis species representing naturally available inorganic molecules relevant to autotrophic metabolism. The set of basis species used in this study consisted of bicarbonate (HCO\textsubscript{3}\textsuperscript{-}), ammonium (NH\textsubscript{4}\textsuperscript{+}), protons (H\textsuperscript{+}), electrons (e\textsuperscript{-}) and water (H\textsubscript{2}O). The only exception was made for calculations performed at the conditions of sample MS5; ammonium was below detection limit and was replaced by nitrate (NO\textsubscript{3}\textsuperscript{-}) as the nitrogen-bearing basis species.
 
@@ -172,7 +181,7 @@ A^{*} \equiv RT\ln{K/Q^{*}}
 Q^{*} = \frac{[H_{2}O]^{f}}{[HCO_{3}^{-}]^{a}[NH_{4}^{+}]^{b}[H^{+}]^{c}[e^{-}]^{d}}
 \end{equation}
 
-\noindent for all samples except for MS5, where $NH_{4}^{+}$ is replaced by $NO_{3}^{-}$. Activities of $NH_{4}^{+}$ and $NO_{3}^{-}$ were assumed to be equivalent to the molal concentrations of ammonia and nitrate reported in \cite{boyer2018thermophile}. Activities of protons were calculated directly from field pH measurements, while those of $HCO_{3}^{-}$ were calculated from DIC.
+\noindent for all samples except for MS5, where $NH_{4}^{+}$ is replaced by $NO_{3}^{-}$. Activities of $NH_{4}^{+}$ and $NO_{3}^{-}$ were assumed to be equivalent to the molal concentrations of ammonia and nitrate reported in Chapter \ref{ch1}. Activities of protons were calculated directly from field pH measurements, while those of $HCO_{3}^{-}$ were calculated from DIC.
 
 Metastable equilibrium percent abundance, $alkyl_{i}\%$, was calculated for the $i^{th}$ sample-averaged alkyl chain relative to others within the same hot spring using the equation
 
@@ -198,6 +207,15 @@ A water sample was not collected for ES2 during the 2012 field season. Because o
 
 % Example reaction from basis species (BP1). What does this look like? (if time, example reaction at MS5)
 
+% example:
+\begin{align}
+\begin{split}
+    19.8HCO_{3}^{-} + &0.0111NH_{4}^{+}\\
+    + 135.9467H^{+} &+ 116.1467e^{-}\\
+    &= alkyl_{BP1} + 58.14H_{2}O
+\end{split}
+\end{align}
+
 % When allowing e- to toggle, what happens to relative IPL abundances? (bison figure)
 
 % Thermodynamically, what might explain why some lipids are never most abundant? (e.g. OF4's chain length or combo of properties place its peak between OF3 and OF5
@@ -217,14 +235,7 @@ Positive correlations were found between Eh\textsubscript{alkyl} and Eh calculat
 \subsection{Relative abundances of representative lipid chains} 
 
 
-% example:
-\begin{align}
-\begin{split}
-    19.8HCO_{3}^{-} + &0.0111NH_{4}^{+}\\
-    + 135.9467H^{+} &+ 116.1467e^{-}\\
-    &= alkyl_{BP1} + 58.14H_{2}O
-\end{split}
-\end{align}
+
 
 \begin{itemize}
 
@@ -844,7 +855,7 @@ Spring & OS2   & 59.8  & 8.27  & 5.3   & 0.662 & 0.285 & 0.206 & -0.328 & -0.477
 \begin{figure}[h]
 \centering
 \includegraphics[width=\linewidth]{"figs_ch2/linked vs free alkyl chains"}
-\caption[Comparison of IPL backbone-alkyl chain linkage types and the free alkyl chains used in thermodynamic calculations]{Comparison of IPL backbone-alkyl chain linkage types (left) and the free alkyl chains used in the thermodynamic calculations of this study (right). R\textsubscript{1} indicates the rest of the alkyl chain and R\textsubscript{2} stands for the remainder of the backbone, headgroup, and other alkyl chains of the IPL. In this study, formulas inside of the orange box on the right (reported in \cite{boyer2018thermophile}) were replaced with those in the yellow box to arrive at the free alkyl chains reported in Table \ref{tab:IPL_thermo}.}
+\caption[Comparison of IPL backbone-alkyl chain linkage types and the free alkyl chains used in thermodynamic calculations]{Comparison of IPL backbone-alkyl chain linkage types (left) and the free alkyl chains used in the thermodynamic calculations of this study (right). R\textsubscript{1} indicates the rest of the alkyl chain and R\textsubscript{2} stands for the remainder of the backbone, headgroup, and other alkyl chains of the IPL. In this study, formulas inside of the orange box on the right (reported in Chapter \ref{ch1}) were replaced with those in the yellow box to arrive at the free alkyl chains reported in Table \ref{tab:IPL_thermo}.}
 \label{fig:linked_vs_free_chain}
 \end{figure}
 \doublespace
