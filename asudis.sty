@@ -74,7 +74,7 @@ letterpaper}%,showframe,showcrop}
   \begin{center}
     \singlespace
 	A \@paperType\ Presented in Partial Fulfillment\\
-	of the Requirement for the Degree\\
+	of the Requirements for the Degree\\
 	\@degreeName
   \end{center}
   \vspace{\tenblanklines}
@@ -114,7 +114,7 @@ letterpaper}%,showframe,showcrop}
 
 %
 % make acknowledgements environment
-%
+
 \newenvironment{acknowledgements}{
   \begin{center}
     \doublespace
@@ -130,13 +130,16 @@ letterpaper}%,showframe,showcrop}
 %\newcommand{\dedicationpage}[1]{
 %\clearpage\vspace*{0.5\textheight}
 %\centerline{\itshape #1}\clearpage
-\newcommand{\dedicationpage}[1]{
-\begin{center}
-   \doublespace
-   {\itshape #1}
-\end{center}
-\clearpage
-}
+
+%%% GB commented out to remove blank page:
+% \newcommand{\dedicationpage}[1]{
+% \begin{center}
+%   \doublespace
+%   {\itshape #1}
+% \end{center}
+% \clearpage
+% }
+%%% end GB comment out
 
 %
 % Fix the table of contents
