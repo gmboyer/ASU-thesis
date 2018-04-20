@@ -127,18 +127,20 @@ letterpaper}%,showframe,showcrop}
 %
 % define \dedicationpage
 %
-%\newcommand{\dedicationpage}[1]{
-%\clearpage\vspace*{0.5\textheight}
-%\centerline{\itshape #1}\clearpage
+% \newcommand{\dedicationpage}[1]{
+% \clearpage\vspace*{0.5\textheight}
+% \centerline{\itshape #1}\clearpage
 
 %%% GB commented out to remove blank page:
-% \newcommand{\dedicationpage}[1]{
-% \begin{center}
-%   \doublespace
+\newcommand{\dedicationpage}[1]{
+\vspace*{0.5\textheight}
+\begin{center}
+  \doublespace
 %   {\itshape #1}
-% \end{center}
-% \clearpage
-% }
+  {#1}
+\end{center}
+\clearpage
+}
 %%% end GB comment out
 
 %
