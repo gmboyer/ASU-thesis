@@ -181,7 +181,7 @@ Analytical response factors were applied in this study to partially account for 
     	\caption{CER}
         \label{fig:CER}
     \end{subfigure}
-    \end{figure}
+\end{figure}
 \newpage
 \begin{figure}[h]\ContinuedFloat
     \begin{subfigure}[b]{.45\linewidth}
@@ -199,7 +199,7 @@ Analytical response factors were applied in this study to partially account for 
     	\caption{GDGT}
         \label{fig:GDGT}
     \end{subfigure}
-    \end{figure}
+\end{figure}
 \newpage
 \begin{figure}[h]\ContinuedFloat
     \begin{subfigure}[b]{.45\linewidth}
@@ -245,14 +245,95 @@ Backbone structures are designated by blue boxes in Figure \ref{fig:IPLdivision}
 
 \afterpage{
 \singlespace
-\begin{figure}
+
+\begin{figure}[p]
 \centering
-\includegraphics[width=.85\linewidth]{figs_ch1/chain_comparison}
+    \begin{subfigure}[b]{1\linewidth}
+        	\includegraphics[width=1\linewidth]{"figs_ch1/C-C linked"}
+        	\caption{C20:0 C-C-linked chain, C\textsubscript{21}H\textsubscript{43}, Z\textsubscript{C} = -2.05}
+        \label{subfig:CC}
+    \end{subfigure}
+    \par\bigskip % force a bit of vertical whitespace
+    \par\bigskip % force a bit of vertical whitespace
+    \par\bigskip % force a bit of vertical whitespace
+    \begin{subfigure}[b]{1\linewidth}
+    	\includegraphics[width=1\linewidth]{"figs_ch1/ether linked"}
+    	\caption{C20:0 ether-linked non-isoprenoidal chain, C\textsubscript{20}H\textsubscript{41}O, Z\textsubscript{C} = -1.95}
+        \label{subfig:ether}
+    \end{subfigure}
+    \par\bigskip % force a bit of vertical whitespace
+    \par\bigskip % force a bit of vertical whitespace
+    \par\bigskip % force a bit of vertical whitespace
+    \begin{subfigure}[b]{1\linewidth}
+        	\includegraphics[width=\linewidth]{"figs_ch1/ether linked isoprenoidal"}
+    	\caption{C20:0 ether-linked isoprenoidal chain, C\textsubscript{20}H\textsubscript{41}O, Z\textsubscript{C} = -1.95}
+        \label{subfig:ether_isoprenoidal}
+    \end{subfigure}
+    \par\bigskip % force a bit of vertical whitespace
+    \par\bigskip % force a bit of vertical whitespace
+    \par\bigskip % force a bit of vertical whitespace
+    \begin{subfigure}[b]{1\linewidth}
+    	\includegraphics[width=\linewidth]{"figs_ch1/ether linked isoprenoidal monolayer"}
+    	\caption{C20:0 ether-linked isoprenoidal GDGT chain, C\textsubscript{20}H\textsubscript{40}O, Z\textsubscript{C} = -1.90}
+        \label{subfig:ether_isoprenoidal_monolayer}
+    \end{subfigure}
+\end{figure}
+\newpage
+\begin{figure}[h]\ContinuedFloat
+    \begin{subfigure}[b]{1\linewidth}
+    	\includegraphics[width=\linewidth]{"figs_ch1/ether linked isoprenoidal monolayer ring"}
+    	\caption{C20:0 ether-linked isoprenoidal GDGT chain with internal ring, C\textsubscript{20}H\textsubscript{38}O, Z\textsubscript{C} = -1.80}
+        \label{subfig:ether_isoprenoidal_monolayer_ring}
+    \end{subfigure}
+    \par\bigskip % force a bit of vertical whitespace
+    \begin{subfigure}[b]{1\linewidth}
+        \includegraphics[width=\linewidth]{"figs_ch1/amide linked"}
+    	\caption{C20:0 amide-linked chain, C\textsubscript{20}H\textsubscript{40}NO, Z\textsubscript{C} = -1.75}
+        \label{subfig:amide}
+    \end{subfigure}
+    \par\bigskip % force a bit of vertical whitespace
+    \begin{subfigure}[b]{1\linewidth}
+        \includegraphics[width=\linewidth]{"figs_ch1/ester linked"}
+    	\caption{C20:0 ester-linked fatty acid chain, C\textsubscript{20}H\textsubscript{39}O\textsubscript{2}, Z\textsubscript{C} = -1.75}
+        \label{subfig:ester}
+    \end{subfigure}
+\end{figure}
+\newpage
+\begin{figure}[h]\ContinuedFloat
+    \begin{subfigure}[b]{1\linewidth}
+        \includegraphics[width=\linewidth]{"figs_ch1/ester linked unsaturated"}
+    	\caption{C20:1 ester-linked unsaturated fatty acid chain, C\textsubscript{20}H\textsubscript{37}O\textsubscript{2}, Z\textsubscript{C} = -1.65}
+        \label{subfig:ester_unsaturated}
+    \end{subfigure}
+    \par\bigskip % force a bit of vertical whitespace
+    \begin{subfigure}[b]{1\linewidth}
+        \includegraphics[width=\linewidth]{"figs_ch1/ester linked hydroxyl"}
+    	\caption{C20:0 ester-linked hydroxylated fatty acid chain, C\textsubscript{20}H\textsubscript{39}O\textsubscript{3}, Z\textsubscript{C} = -1.65}
+        \label{subfig:ester_hydroxyl}
+    \end{subfigure}
+    \par\bigskip % force a bit of vertical whitespace
+    \begin{subfigure}[b]{1\linewidth}
+        \includegraphics[width=\linewidth]{"figs_ch1/ester linked short"}
+    	\caption{C16:0 ester-linked fatty acid chain, C\textsubscript{16}H\textsubscript{31}O\textsubscript{2}, Z\textsubscript{C} = -1.35}
+        \label{subfig:ester_short}
+    \end{subfigure}
+
 \caption[Lipid alkyl chain modifications and backbone-chain linkage types organized by Z\textsubscript{C}]{Lipid alkyl chain modifications and backbone-chain linkage types organized by Z\textsubscript{C} from reduced (top) to oxidized (bottom). Example structures were chosen to permit comparison of Z\textsubscript{C} according to a various types of biochemical modifications: chain-backbone linkage type as C-C, ether, amide, or ester (a, b, f, g); non-branching and branching chains (b, c); bilayer- and monolayer-forming isoprenoidal chains (c, d); GDGT chains without and with an internal ring (d, e); saturated and unsaturated chains (g, h); non-hydroxylated and hydroxylated chains (g, i); and chains with a greater and lesser number of aliphatic carbons (g, j). R\textsubscript{1} represents the rest of the lipid backbone, and R\textsubscript{2} indicates the second half of a monolayer-forming GDGT chain and was considered a separate chain when calculating average chain properties.}
 \label{fig:chain_comparison}
 \end{figure}
 \doublespace
 }
+
+% \afterpage{
+% \singlespace
+% \begin{figure}
+% \centering
+% \includegraphics[width=.85\linewidth]{figs_ch1/chain_comparison}
+% \caption[Lipid alkyl chain modifications and backbone-chain linkage types organized by Z\textsubscript{C}]{Lipid alkyl chain modifications and backbone-chain linkage types organized by Z\textsubscript{C} from reduced (top) to oxidized (bottom). Example structures were chosen to permit comparison of Z\textsubscript{C} according to a various types of biochemical modifications: chain-backbone linkage type as C-C, ether, amide, or ester (a, b, f, g); non-branching and branching chains (b, c); bilayer- and monolayer-forming isoprenoidal chains (c, d); GDGT chains without and with an internal ring (d, e); saturated and unsaturated chains (g, h); non-hydroxylated and hydroxylated chains (g, i); and chains with a greater and lesser number of aliphatic carbons (g, j). R\textsubscript{1} represents the rest of the lipid backbone, and R\textsubscript{2} indicates the second half of a monolayer-forming GDGT chain and was considered a separate chain when calculating average chain properties.}
+% \label{fig:chain_comparison}
+% \end{figure}
+% \doublespace
+% }
 
 In addition to these two connector groups, the three-carbon backbone may include modifications like hydroxylations or carbonyl groups. A single lipid may have more than one backbone, such as DPG or GDGT (Figure \ref{fig:DPG} and \ref{fig:GDGT}). 
 % For `lyso'-IPLs with only one alkyl chain, the backbone was assigned one extra hydrogen atom to cap off the naked connector group.
